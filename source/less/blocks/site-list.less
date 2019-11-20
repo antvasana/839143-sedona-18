@@ -1,4 +1,29 @@
 .site-list {
-  color: #f0f;
   .list-reset();
+
+  font-size: @main-font-size;
+  line-height: @big-line-height;
+}
+
+.site-list__item {
+  background-color: @main-color;
+  border-bottom: 1px solid @main-color-dark;
+  border-top: 1px solid @main-color-light;
+}
+
+.site-list__item:first-child {
+  border-top: none;
+}
+
+.site-list__item:last-child {
+  border-bottom: none;
+}
+
+.site-list__item a {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 15px;
+
+  font-weight: bold;
+  color: @another-text-color;
 }
