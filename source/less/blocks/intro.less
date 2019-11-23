@@ -1,0 +1,43 @@
+.intro {
+  &__invite {
+    position: relative;
+
+    background-color: #87b3d0;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 30%;
+    height: 389px;
+  }
+
+  &__invite::after{
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+
+    width: 320px;
+    height: 37px;
+
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+  }
+
+  &__image {
+    padding-top: 76px;
+    padding-bottom: 70px;
+  }
+
+  &__description {
+    padding-left: 32px;
+    padding-right: 33px;
+  }
+
+  &__slogan {
+    font-size: @main-font-size;
+    line-height: @main-line-height;
+  }
+
+  &__reasons {
+    font-size: @small-font-size;
+    line-height: @main-line-height;
+  }
+}
