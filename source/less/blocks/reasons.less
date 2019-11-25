@@ -1,3 +1,19 @@
 .reasons__list {
+  display: flex;
+  flex-direction: column;
+
   .list-reset();
+}
+
+.reasons__list li:first-child {
+  order: -2;
+}
+
+.reasons__list li:last-child {
+  order: -1;
+}
+
+.reasons__item--real-town,
+.reasons__item--devil-bridge {
+  background-color: @main-color;
 }
