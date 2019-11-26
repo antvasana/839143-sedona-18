@@ -1,3 +1,66 @@
 .feedback fieldset {
   .fieldset-reset();
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  border-bottom: 1px solid @border-color-one;
+  text-align: left;
+}
+
+.feedback fieldset:last-of-type {
+  border-bottom: none;
+}
+
+.feedback {
+  &__introduction {
+    padding-bottom: 22px;
+
+    border-bottom: 1px solid @border-color-one;
+  }
+
+  &__title {
+    font-size: @main-font-size;
+    line-height: @main-line-height;
+  }
+
+  &__give-feedback,
+  &__label {
+    font-size: @small-font-size;
+    line-height: @medium-line-height;
+  }
+
+&__legend {
+  margin: 0 auto;
+  padding-top: 24px;
+
+  font-size: @main-font-size;
+  line-height: @main-line-height;
+  font-weight: bold;
+  text-align: center;
+}
+
+&__introduce-yourself &__label {
+  padding-left: 20px;
+  padding-right: 13px;
+}
+
+&__contacts-request &__label {
+  padding-left: 42px;
+}
+}
+
+.impression-list,
+.visited-sights-list {
+  .list-reset();
+}
+
+.impression-list .impression-list__label,
+.visited-sights-list .visited-sights-list__label {
+  padding-left: 98px;
+
+  text-transform: none;
+}
+
+.story__textfield {
+  margin-left: 15px;
 }
