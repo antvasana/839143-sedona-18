@@ -26,9 +26,51 @@
     padding-bottom: 85px;
   }
 
+  &__invite-inner {
+    position: relative;
+
+    background-color: @main-color;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 60% 90%;
+    height: 180px;
+  }
+
+  &__invite-inner::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 320px;
+    height: 26px;
+
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+  }
+
+  &__image-inner {
+    padding-top: 52px;
+    padding-bottom: 67px;
+  }
+
   &__description {
+    position: relative;
+
     padding-left: 32px;
     padding-right: 33px;
+  }
+
+  &__description::after{
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    z-index: 10;
+
+    width: 320px;
+    height: 37px;
+
+    background-image: url("../img/white-copy.svg");
   }
 
   &__slogan {

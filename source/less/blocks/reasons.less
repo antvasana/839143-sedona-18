@@ -3,6 +3,68 @@
   flex-direction: column;
 
   .list-reset();
+
+  .reasons__item--real-town,
+  .reasons__item--devil-bridge {
+    color: @another-text-color;
+    background-color: @main-color;
+  }
+
+  .reasons__item--real-town {
+    min-height: 450px;
+  }
+
+  .reasons__item--devil-bridge {
+    min-height: 480px;
+  }
+
+  .reasons__city,
+  .reasons__bridge {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  .reasons__item h2 {
+    font-size: @main-font-size;
+    line-height: @main-line-height;
+  }
+
+  .reasons__item--real-town h2,
+  .reasons__item--devil-bridge h2 {
+    color: @another-text-color;
+    background-color: @main-color;
+  }
+
+  .reasons__item--real-town h2 {
+    margin-bottom: 0;
+    padding-top: 50px;
+  }
+
+  .reasons__item--devil-bridge h2 {
+    margin-bottom: 0;
+    padding-top: 25px;
+  }
+
+  .reasons__item span,
+  .reasons__item p {
+    font-size: @small-font-size;
+    line-height: @small-line-height;
+  }
+
+  .reasons__item--real-town p,
+  .reasons__item--devil-bridge p {
+    padding-bottom: 20px;
+  }
+
+  .reasons__item--real-town img {
+    position: relative;
+    top: 13px;
+  }
+
+  .reasons__item--devil-bridge img {
+    position: relative;
+    top: 6px;
+  }
 }
 
 .reasons__list li:first-child {
@@ -13,7 +75,31 @@
   order: -1;
 }
 
-.reasons__item--real-town,
-.reasons__item--devil-bridge {
-  background-color: @main-color;
+.reasons__item:nth-child(3),
+.reasons__item:nth-child(4),
+.reasons__item:nth-child(5) {
+  background-color: @another-color;
 }
+
+.reasons__item:nth-child(3) p,
+.reasons__item:nth-child(4) p {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 32px;
+
+  border-bottom: 1px solid @border-color-two;
+}
+
+.reasons__item:nth-child(3) p,
+.reasons__item:nth-child(4) p,
+.reasons__item:nth-child(5) p {
+  padding-bottom: 32px;
+}
+
+.reasons__item:nth-child(4) p {
+  padding-left: 16px;
+  padding-right: 15px;
+}
+
+
+
