@@ -1,0 +1,23 @@
+.copyright {
+  display: flex;
+
+  &__text {
+    margin-left: 18px;
+    margin-right: 18px;
+    font-size: @small-font-size;
+    line-height: @main-line-height;
+  }
+
+  &__link {
+    margin-top: 10px;
+  }
+}
+
+.copyright__link:hover path {
+  fill: @main-color;
+}
+
+.copyright__link:focus path,
+.copyright__link:active path {
+  fill: rgba(0, 0, 0, 0.3);
+}

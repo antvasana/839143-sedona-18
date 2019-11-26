@@ -1,0 +1,59 @@
+.search-booking iframe {
+  position: relative;
+  z-index: 5;
+
+  border: none;
+}
+
+.search-booking {
+  position: relative;
+
+  &__map {
+    position: absolute;
+    top: 286px;
+    left: 0;
+    z-index: 1;
+
+    margin: 0;
+  }
+
+}
+
+.search-booking h2 {
+  font-size: @big-font-size;
+  line-height: @big-line-height;
+}
+
+.search-booking .search-booking__trip-date {
+  margin-bottom: 40px;
+
+  font-size: @small-font-size;
+  line-height: @main-line-height;
+}
+
+.search-booking__link {
+  display: block;
+
+  margin: 0 auto;
+  margin-bottom: 49px;
+  padding: 18px 47px;
+  width: 280px;
+
+  font-size: @big-font-size;
+  line-height: @main-line-height;
+  font-weight: bold;
+  color: @another-text-color;
+  background-color: @main-color;
+}
+
+.search-booking__link:hover {
+  background-color: #669ec0;
+}
+
+.search-booking__link:focus,
+.search-booking__link:active {
+  color: rgb(148, 185, 210);
+    background-color: #5496bd;
+}
+
+
