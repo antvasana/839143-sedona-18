@@ -12,16 +12,15 @@
 }
 
 .feedback {
+  font-size: @main-font-size;
+  line-height: @main-line-height;
+
   &__introduction {
     padding-bottom: 22px;
 
     border-bottom: 1px solid @border-color-one;
   }
 
-  &__title {
-    font-size: @main-font-size;
-    line-height: @main-line-height;
-  }
 
   &__give-feedback,
   &__label {
@@ -33,8 +32,6 @@
   margin: 0 auto;
   padding-top: 24px;
 
-  font-size: @main-font-size;
-  line-height: @main-line-height;
   font-weight: bold;
   text-align: center;
 }
@@ -63,4 +60,20 @@
 
 .story__textfield {
   margin-left: 15px;
+}
+
+.impression-list__option {
+  margin-bottom: 52px;
+}
+
+.impression-list__option:last-child {
+  margin-bottom: 25px;
+}
+
+.visited-sights-list__option {
+  margin-bottom: 65px;
+}
+
+.visited-sights-list__option:last-child {
+  margin-bottom: 25px;
 }
