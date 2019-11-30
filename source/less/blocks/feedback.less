@@ -1,3 +1,280 @@
 .feedback fieldset {
   .fieldset-reset();
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  border-bottom: 1px solid @border-color-one;
+  text-align: left;
+}
+
+.impression-list,
+.visited-sights-list {
+  .list-reset();
+}
+
+.feedback fieldset:last-of-type {
+  border-bottom: none;
+}
+
+.feedback {
+  font-size: @main-font-size;
+  line-height: @main-line-height;
+
+  &__introduction {
+    padding-bottom: 22px;
+
+    border-bottom: 1px solid @border-color-one;
+  }
+
+
+  &__give-feedback,
+  &__label {
+    font-size: @small-font-size;
+    line-height: @medium-line-height;
+  }
+
+  &__legend {
+    margin: 0 auto;
+    padding-top: 24px;
+
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__introduce-yourself &__label {
+    padding-left: 20px;
+    padding-right: 13px;
+  }
+
+  &__label--surname {
+    padding-right: 10px;
+  }
+
+  &__contacts-request &__label {
+    padding-left: 42px;
+  }
+
+  &__label--phone {
+    display: block;
+    margin-bottom: 14px;
+  }
+
+  &__label--email {
+    display: block;
+    margin-bottom: 14px;
+  }
+
+  & input::placeholder,
+  & textarea::placeholder {
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+  }
+
+  & input:hover {
+    background-color: #e5e5e5;
+    border: 4px solid #e5e5e5;
+  }
+
+  & input:active,
+  & input:focus {
+    background-color: transparent;
+    border: 4px solid #e5e5e5;
+  }
+
+  &__send-btn {
+    padding: 21px 47px;
+
+    font-size: @big-font-size;
+    line-height: @main-line-height;
+    font-weight: bold;
+
+    color: @another-text-color;
+    background-color: @main-color;
+  }
+
+  &__send-btn:hover {
+    background-color: #669ec0;
+  }
+
+  &__send-btn:active {
+    color: rgb(148, 185, 210);
+    background-color: #5496bd;
+  }
+}
+
+.impression-list__label,
+.visited-sights-list__label {
+  padding-left: 98px;
+
+  font-weight: bold;
+  text-transform: none;
+}
+
+.story__textfield {
+  margin-left: 19px;
+  padding-top: 20px;
+  padding-left: 21px;
+  width: 279px;
+
+  font-weight: bold;
+  background-color: @form-background-color;
+  border: 4px solid @form-background-color;
+  resize: none;
+}
+
+.story__textfield:hover {
+  background-color: #e5e5e5;
+  border: 4px solid #e5e5e5;
+}
+
+.story__textfield:active,
+.story__textfield:focus {
+    background-color: transparent;
+    border: 4px solid #e5e5e5;
+}
+
+.impression-list__option {
+  margin-bottom: 52px;
+}
+
+.impression-list__option:last-child {
+  margin-bottom: 25px;
+}
+
+.visited-sights-list__option {
+  margin-bottom: 65px;
+}
+
+.visited-sights-list__option:last-child {
+  margin-bottom: 25px;
+}
+
+.feedback__user--name,
+.feedback__user--surname {
+  margin-bottom: 50px;
+}
+
+.feedback__user--name {
+  /*margin-top: 15px;
+  margin-bottom: 9px;
+  margin-left: 8px;*/
+  padding-top: 11px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  width: 220px;
+  box-sizing: border-box;
+
+  font-family: @fancy-font, "Arial", sans-serif;
+  font-weight: bold;
+  font-size: @main-font-size;
+  line-height: @main-line-height;
+
+  border: 4px solid @form-background-color;
+  background-color: @form-background-color;
+
+/*@media (min-width: @desktop-width) {
+    margin-left: 10px;
+    width: 350px;
+  }*/
+}
+
+.feedback__user--surname {
+  /*margin-top: 15px;
+  margin-bottom: 9px;
+  margin-left: 8px;*/
+  padding-top: 11px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  width: 187px;
+  box-sizing: border-box;
+
+  font-family: @fancy-font, "Arial", sans-serif;
+  font-weight: bold;
+  font-size: @main-font-size;
+  line-height: @main-line-height;
+
+  border: 4px solid @form-background-color;
+  background-color: @form-background-color;
+
+/*@media (min-width: @desktop-width) {
+    margin-left: 10px;
+    width: 350px;
+  }*/
+}
+
+.feedback__user--patronymic {
+  /*margin-top: 15px;
+  margin-bottom: 9px;
+  margin-left: 8px;*/
+  padding-top: 11px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  width: 187px;
+  box-sizing: border-box;
+
+  font-family: @fancy-font, "Arial", sans-serif;
+  font-weight: bold;
+  font-size: @main-font-size;
+  line-height: @main-line-height;
+
+  border: 4px solid @form-background-color;
+  background-color: @form-background-color;
+
+/*@media (min-width: @desktop-width) {
+    margin-left: 10px;
+    width: 350px;
+  }*/
+}
+
+.feedback__user--phone {
+  /*margin-top: 15px;
+  margin-bottom: 9px;
+  margin-left: 8px;*/
+  margin-left: 17px;
+  margin-bottom: 15px;
+  padding-top: 11px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  width: 280px;
+  box-sizing: border-box;
+
+  font-family: @fancy-font, "Arial", sans-serif;
+  font-weight: bold;
+  font-size: @main-font-size;
+  line-height: @main-line-height;
+
+  border: 4px solid @form-background-color;
+  background-color: @form-background-color;
+
+/*@media (min-width: @desktop-width) {
+    margin-left: 10px;
+    width: 350px;
+  }*/
+}
+
+.feedback__user--email {
+  /*margin-top: 15px;
+  margin-bottom: 9px;
+  margin-left: 8px;*/
+  margin-left: 17px;
+  margin-bottom: 15px;
+  padding-top: 11px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  width: 280px;
+  box-sizing: border-box;
+
+  font-family: @fancy-font, "Arial", sans-serif;
+  font-weight: bold;
+  font-size: @main-font-size;
+  line-height: @main-line-height;
+
+  border: 4px solid @form-background-color;
+  background-color: @form-background-color;
+
+/*@media (min-width: @desktop-width) {
+    margin-left: 10px;
+    width: 350px;
+  }*/
 }
