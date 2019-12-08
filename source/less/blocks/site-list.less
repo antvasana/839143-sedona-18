@@ -4,21 +4,21 @@
   font-size: @main-font-size;
   line-height: @big-line-height;
 
-  .site-list__item {
+  &__item {
     background-color: @main-color;
     border-bottom: 1px solid @main-color-dark;
     border-top: 1px solid @main-color-light;
   }
 
-  .site-list__item:first-child {
+  &__item:first-child {
     border-top: none;
   }
 
-  .site-list__item:last-child {
+  &__item:last-child {
     border-bottom: none;
   }
 
-  .site-list__item a {
+  &__item a {
     display: block;
     padding-top: 14px;
     padding-bottom: 15px;
@@ -27,11 +27,11 @@
     color: @another-text-color;
   }
 
-  .site-list__item a:hover {
+  &__item a:hover {
     background-color: #669ec0;
   }
 
-  .site-list__item a:active {
+  &__item a:active {
     color: rgb(148, 185, 210);
     background-color: #5496bd;
   }

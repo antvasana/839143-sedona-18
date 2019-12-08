@@ -17,8 +17,7 @@
 }
 
 .feedback {
-  font-size: @main-font-size;
-  line-height: @main-line-height;
+  .main-font();
 
   &__introduction {
     padding-bottom: 22px;
@@ -167,8 +166,7 @@
 
   font-family: @fancy-font, "Arial", sans-serif;
   font-weight: bold;
-  font-size: @main-font-size;
-  line-height: @main-line-height;
+  .main-font();
 
   border: 4px solid @form-background-color;
   background-color: @form-background-color;
@@ -191,8 +189,7 @@
 
   font-family: @fancy-font, "Arial", sans-serif;
   font-weight: bold;
-  font-size: @main-font-size;
-  line-height: @main-line-height;
+  .main-font();
 
   border: 4px solid @form-background-color;
   background-color: @form-background-color;
@@ -215,8 +212,7 @@
 
   font-family: @fancy-font, "Arial", sans-serif;
   font-weight: bold;
-  font-size: @main-font-size;
-  line-height: @main-line-height;
+  .main-font();
 
   border: 4px solid @form-background-color;
   background-color: @form-background-color;
@@ -225,6 +221,30 @@
     margin-left: 10px;
     width: 350px;
   }*/
+}
+
+.feedback__label--phone,
+.feedback__label--email {
+  position: relative;
+}
+
+.feedback__label--phone::after,
+.feedback__label--email::after {
+  content: "";
+  position: absolute;
+  top: 38px;
+  right: 20px;
+
+  width: 58px;
+  height: 58px;
+}
+
+.feedback__label--phone::after {
+  background: #e6e6e6 url("../img/icon-phone.svg") no-repeat 50%;
+}
+
+.feedback__label--email::after{
+  background: #e6e6e6 url("../img/icon-mail.svg") no-repeat 50%;
 }
 
 .feedback__user--phone {
@@ -241,8 +261,7 @@
 
   font-family: @fancy-font, "Arial", sans-serif;
   font-weight: bold;
-  font-size: @main-font-size;
-  line-height: @main-line-height;
+  .main-font();
 
   border: 4px solid @form-background-color;
   background-color: @form-background-color;
@@ -267,8 +286,7 @@
 
   font-family: @fancy-font, "Arial", sans-serif;
   font-weight: bold;
-  font-size: @main-font-size;
-  line-height: @main-line-height;
+  .main-font();
 
   border: 4px solid @form-background-color;
   background-color: @form-background-color;
