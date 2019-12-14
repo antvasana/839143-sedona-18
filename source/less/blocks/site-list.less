@@ -35,4 +35,37 @@
     color: rgb(148, 185, 210);
     background-color: #5496bd;
   }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 0;
+
+    font-size: @small-font-size;
+    line-height: @main-line-height;
+
+    &__item {
+      padding-top: 20px;
+      padding-bottom: 15px;
+      background-color: transparent;
+      border-bottom: none;
+      border-top: none;
+    }
+
+    &__item a {
+      display: inline;
+
+      color: #000000;
+    }
+
+    &__item a:hover {
+      background-color: transparent;
+    }
+
+    &__item a:active {
+      color: #000000;
+      background-color: transparent;
+    }
+  }
 }
