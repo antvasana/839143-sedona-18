@@ -10,11 +10,11 @@
     border-top: 1px solid @main-color-light;
   }
 
-  &__item:first-child {
+  &__item:nth-child(1) {
     border-top: none;
   }
 
-  &__item:last-child {
+  &__item:nth-child(4) {
     border-bottom: none;
   }
 
@@ -41,6 +41,7 @@
     justify-content: space-between;
 
     margin-bottom: 0;
+    margin-left: 49px;
 
     font-size: @small-font-size;
     line-height: @main-line-height;
@@ -51,6 +52,19 @@
       background-color: transparent;
       border-bottom: none;
       border-top: none;
+    }
+
+    &__item:nth-child(1) {
+      margin-right: 60px;
+    }
+
+    &__item:nth-child(2) {
+      margin-right: 60px;
+    }
+
+    &__item:nth-child(3) {
+      margin-left: 90px;
+      margin-right: 70px;
     }
 
     &__item a {

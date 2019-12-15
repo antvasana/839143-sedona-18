@@ -21,6 +21,13 @@
     height: 26px;
 
     background-image: url("../img/bg-intro-triangle-mobile.svg");
+
+    @media (min-width: @tablet-width) {
+      width: 768px;
+      height: 57px;
+
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+    }
   }
 
   &__image {
@@ -62,6 +69,12 @@
 
     padding-left: 32px;
     padding-right: 33px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 50px;
+      padding-left: 139px;
+      padding-right: 139px;
+    }
   }
 
   &__description::after{
@@ -75,10 +88,19 @@
     height: 37px;
 
     background-image: url("../img/white-copy.svg");
+
+    @media (min-width: @tablet-width) {
+      background-image: none;
+    }
   }
 
   &__slogan {
     .main-font();
+
+    @media (min-width: @tablet-width) {
+      font-size: @big-font-size;
+      line-height: @main-line-height;
+    }
   }
 
   &__reasons {
