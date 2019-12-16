@@ -22,13 +22,36 @@
 .search-booking h2 {
   font-size: @big-font-size;
   line-height: @big-line-height;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+
+    font-size: @biggest-font-size;
+    line-height: @main-line-height;
+  }
 }
 
-.search-booking .search-booking__trip-date {
+.search-booking__trip-date {
   margin-bottom: 40px;
+  margin-left: 14px;
+  margin-right: 14px;
 
   font-size: @small-font-size;
   line-height: @main-line-height;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 150px;
+    margin-right: 150px;
+
+    line-height: @medium-line-height;
+  }
+}
+
+.search-booking__trip-date span {
+  @media (min-width: @tablet-width) {
+    margin-left: 90px;
+    margin-right: 90px;
+  }
 }
 
 .search-booking__link {

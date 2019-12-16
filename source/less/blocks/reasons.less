@@ -7,6 +7,8 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+
+    margin-bottom: 40px;
   }
 
   .reasons__item--real-town,
@@ -56,6 +58,11 @@
 
   .reasons__item h2 {
     .main-font();
+
+    @media (min-width: @tablet-width) {
+      font-size: @big-font-size;
+      line-height: @main-line-height;
+    }
   }
 
   .reasons__item--real-town h2,
@@ -128,7 +135,29 @@
   background-color: @another-color;
 
   @media (min-width: @tablet-width) {
+    padding-top: 50px;
     max-width: 255px;
+  }
+}
+
+.reasons__item:nth-child(3) h2 {
+  @media (min-width: @tablet-width) {
+    padding-right: 17px;
+    padding-left: 17px;
+  }
+}
+
+.reasons__item:nth-child(4) h2 {
+  @media (min-width: @tablet-width) {
+    padding-right: 39px;
+    padding-left: 39px;
+  }
+}
+
+.reasons__item:nth-child(5) h2 {
+  @media (min-width: @tablet-width) {
+    padding-right: 48px;
+    padding-left: 48px;
   }
 }
 
