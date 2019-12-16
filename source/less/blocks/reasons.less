@@ -4,6 +4,11 @@
 
   .list-reset();
 
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .reasons__item--real-town,
   .reasons__item--devil-bridge {
     color: @another-text-color;
@@ -12,16 +17,41 @@
 
   .reasons__item--real-town {
     min-height: 450px;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+
+      min-height: 256px;
+    }
   }
 
   .reasons__item--devil-bridge {
     min-height: 480px;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-direction: row-reverse;
+
+      min-height: 256px;
+    }
   }
 
   .reasons__city,
   .reasons__bridge {
     padding-left: 17px;
     padding-right: 17px;
+  }
+
+  @media (min-width: @tablet-width) {
+    .reasons__city {
+      padding-left: 47px;
+      padding-right: 47px;
+    }
+
+    .reasons__bridge {
+      padding-left: 51px;
+      padding-right: 51px;
+  }
   }
 
   .reasons__item h2 {
@@ -37,6 +67,10 @@
   .reasons__item--real-town h2 {
     margin-bottom: 0;
     padding-top: 50px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 30px;
+    }
   }
 
   .reasons__item--devil-bridge h2 {
@@ -58,11 +92,25 @@
   .reasons__item--real-town img {
     position: relative;
     top: 13px;
+
+    @media (min-width: @tablet-width) {
+      top: 0;
+
+      min-width: 512px;
+      height: 256px;
+    }
   }
 
   .reasons__item--devil-bridge img {
     position: relative;
     top: 6px;
+
+    @media (min-width: @tablet-width) {
+      top: 0;
+
+      min-width: 512px;
+      height: 256px;
+    }
   }
 }
 
@@ -78,6 +126,16 @@
 .reasons__item:nth-child(4),
 .reasons__item:nth-child(5) {
   background-color: @another-color;
+
+  @media (min-width: @tablet-width) {
+    max-width: 255px;
+  }
+}
+
+.reasons__item:nth-child(5) {
+  @media (min-width: @tablet-width) {
+    max-width: 256px;
+  }
 }
 
 .reasons__item:nth-child(3) p,
@@ -87,6 +145,10 @@
   padding-bottom: 32px;
 
   border-bottom: 1px solid @border-color-two;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .reasons__item:nth-child(3) p,
