@@ -53,7 +53,7 @@
     .reasons__bridge {
       padding-left: 51px;
       padding-right: 51px;
-  }
+    }
   }
 
   .reasons__item h2 {
@@ -63,12 +63,6 @@
       font-size: @big-font-size;
       line-height: @main-line-height;
     }
-  }
-
-  .reasons__item--real-town h2,
-  .reasons__item--devil-bridge h2 {
-    color: @another-text-color;
-    background-color: @main-color;
   }
 
   .reasons__item--real-town h2 {
@@ -135,8 +129,17 @@
   background-color: @another-color;
 
   @media (min-width: @tablet-width) {
-    padding-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 10px;
     max-width: 255px;
+  }
+}
+
+.reasons__item:nth-child(3) h2,
+.reasons__item:nth-child(4) h2,
+.reasons__item:nth-child(5) h2 {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 5px;
   }
 }
 
@@ -168,6 +171,16 @@
 }
 
 .reasons__item:nth-child(3) p,
+.reasons__item:nth-child(4) p,
+.reasons__item:nth-child(5) p {
+  padding-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
+  }
+}
+
+.reasons__item:nth-child(3) p,
 .reasons__item:nth-child(4) p {
   margin-left: 20px;
   margin-right: 20px;
@@ -180,16 +193,41 @@
   }
 }
 
-.reasons__item:nth-child(3) p,
-.reasons__item:nth-child(4) p,
-.reasons__item:nth-child(5) p {
-  padding-bottom: 32px;
+.reasons__item:nth-child(3) p {
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+  }
+}
+
+.reasons__item:nth-child(3) .reasons__second-line {
+  @media (min-width: @tablet-width) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .reasons__item:nth-child(4) p {
   padding-left: 16px;
   padding-right: 15px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 30px;
+  }
 }
 
+  .reasons__item:nth-child(4) .reasons__second-line {
+    @media (min-width: @tablet-width) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
 
+  .reasons__item:nth-child(5) p {
+    padding-left: 30px;
+    padding-right: 30px;
 
+    @media (min-width: @tablet-width) {
+      padding-left: 38px;
+      padding-right: 38px;
+    }
+  }
