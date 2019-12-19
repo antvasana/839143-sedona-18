@@ -5,6 +5,15 @@
   padding-left: 80px;
   padding-right: 80px;
 
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
   .page-footer__hashtag {
     display: block;
     margin-bottom: 40px;
@@ -13,5 +22,76 @@
     line-height: @main-line-height;
     font-weight: bold;
     color: #000000;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 15px;
+    }
+  }
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-around;
+
+  .list-reset();
+
+  &__button:nth-child(3) {
+    margin-right: 0;
+  }
+
+  &__button {
+    margin-right: 6px;
+    width: 46px;
+    height: 48px;
+  }
+
+  &__button a {
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 10px;
+
+    background-color: #81b3d2;
+  }
+
+  &__button a:hover {
+    background-color: #669ec0;
+  }
+
+  &__button a:focus,
+  &__button a:active {
+    background-color: #5496bd;
+  }
+
+  &__btn:focus path,
+  &__:active path {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.copyright {
+  display: flex;
+
+  &__text {
+    margin-left: 18px;
+    margin-right: 18px;
+    font-size: @small-font-size;
+    line-height: @main-line-height;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 11px;
+    }
+  }
+
+  &__link {
+    margin-top: 10px;
+  }
+
+  &__link:hover path {
+    fill: @main-color;
+  }
+
+  &__link:focus path,
+  &__link:active path {
+    fill: rgba(0, 0, 0, 0.3);
   }
 }
