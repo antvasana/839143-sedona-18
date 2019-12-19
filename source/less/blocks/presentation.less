@@ -2,8 +2,20 @@
   padding-left: 24px;
   padding-right: 24px;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 75px;
+
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+
   &__title {
     .main-font();
+
+    @media (min-width: @tablet-width) {
+      font-size: @biggest-font-size;
+      line-height: @main-line-height;
+    }
   }
 
   &__review {

@@ -45,6 +45,14 @@
     background-repeat: no-repeat;
     background-position: 60% 90%;
     height: 180px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 76px;
+
+      background-image: url("../img/bg-back-tablet@1x.jpg");
+      background-position: 10% 95%;
+      height: 290px;
+    }
   }
 
   &__invite-inner::after{
@@ -57,6 +65,13 @@
     height: 26px;
 
     background-image: url("../img/bg-intro-triangle-mobile.svg");
+
+    @media (min-width: @tablet-width) {
+      width: 768px;
+      height: 57px;
+
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+    }
   }
 
   &__image-inner {

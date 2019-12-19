@@ -4,15 +4,26 @@
 
   text-align: left;
 
-&__title,
-&__author-name,
-&__likes {
-  font-size: @small-font-size;
-  line-height: @medium-line-height;
-}
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-&__author-name {
-  font-style: normal;
-  text-transform: none;
-}
+    margin-bottom: 68px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+
+  &__title,
+  &__author-name,
+  &__likes {
+    font-size: @small-font-size;
+    line-height: @medium-line-height;
+  }
+
+  &__author-name {
+    font-style: normal;
+    text-transform: none;
+  }
 }
