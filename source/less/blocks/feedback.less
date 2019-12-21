@@ -28,8 +28,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    padding-left: 55px;
-    padding-right: 55px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   &__introduction {
@@ -41,14 +41,14 @@
       order: -2;
 
       margin-bottom: 30px;
-      padding-left: 109px;
-      padding-right: 109px;
+      padding-left: 104px;
+      padding-right: 104px;
 
       border-bottom: none;
     }
   }
 
-  &__introduction h2 {
+  & &__introduction h2 {
     @media (min-width: @tablet-width) {
       margin-bottom: 30px;
       font-size: @biggest-font-size;
@@ -56,8 +56,15 @@
     }
   }
 
-  .feedback__your-impression {
-    order: -1;
+  & &__your-impression {
+    @media (min-width: @tablet-width) {
+      order: -1;
+
+      padding-right: 50px;
+
+
+      border-right: 1px solid #dbdbdb;
+    }
   }
 
   &__give-feedback,
@@ -88,6 +95,20 @@
   &__legend--introduce-yourself {
     @media (min-width: @tablet-width) {
       text-align: left;
+    }
+  }
+
+  &__legend--your-impression {
+    @media (min-width: @tablet-width) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &__legend--introduce-yourself {
+    @media (min-width: @tablet-width) {
+      margin-left: 15px;;
+      margin-right: 0;
     }
   }
 
@@ -155,10 +176,13 @@
   &__user--name,
   &__user--surname {
     margin-bottom: 50px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 30px;
+    }
   }
 
   &__user--name {
-
     padding-top: 11px;
     padding-bottom: 13px;
     padding-left: 20px;
@@ -172,10 +196,9 @@
     border: 4px solid @form-background-color;
     background-color: @form-background-color;
 
-    /*@media (min-width: @desktop-width) {
-    margin-left: 10px;
-    width: 350px;
-    }*/
+    @media (min-width: @tablet-width) {
+      width: 216px;
+    }
   }
 
   &__user--surname {
@@ -192,10 +215,9 @@
     border: 4px solid @form-background-color;
     background-color: @form-background-color;
 
-    /*@media (min-width: @desktop-width) {
-      margin-left: 10px;
-      width: 350px;
-    }*/
+    @media (min-width: @tablet-width) {
+      width: 178px;
+    }
   }
 
   &__user--patronymic {
@@ -212,10 +234,9 @@
     border: 4px solid @form-background-color;
     background-color: @form-background-color;
 
-  /*@media (min-width: @desktop-width) {
-    margin-left: 10px;
-    width: 350px;
-  }*/
+    @media (min-width: @tablet-width) {
+      width: 180px;
+    }
  }
 
   &__label--phone,
@@ -298,39 +319,12 @@
   }
 }
 
-.impression-list__label,
-.visited-sights-list__label {
-  padding-left: 98px;
-
-  font-weight: bold;
-  text-transform: none;
-}
-
-.story__textfield {
-  margin-left: 19px;
-  padding-top: 20px;
-  padding-left: 21px;
-  width: 279px;
-
-  font-weight: bold;
-  background-color: @form-background-color;
-  border: 4px solid @form-background-color;
-  resize: none;
-}
-
-.story__textfield:hover {
-  background-color: #e5e5e5;
-  border: 4px solid #e5e5e5;
-}
-
-.story__textfield:active,
-.story__textfield:focus {
-    background-color: transparent;
-    border: 4px solid #e5e5e5;
-}
-
 .impression-list__option {
   margin-bottom: 52px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 61px;
+  }
 }
 
 .impression-list__option:last-child {
@@ -340,6 +334,17 @@
 .impression-list__label,
 .visited-sights-list__label {
   position: relative;
+
+  padding-left: 98px;
+
+  font-weight: bold;
+  text-transform: none;
+}
+
+.impression-list__label {
+  @media (min-width: @tablet-width) {
+    padding-left: 68px;
+  }
 }
 
 .impression-list__label::before {
@@ -353,6 +358,10 @@
 
   background-color: #f2f2f2;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    left: 0;
+  }
 }
 
 .impression-list__input:checked + .impression-list__label::after {
@@ -366,6 +375,10 @@
 
   background-color: #333333;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    left: 15px;
+  }
 }
 
 .visited-sights-list__label::before {
@@ -400,4 +413,26 @@
 
 .visited-sights-list__option:last-child {
   margin-bottom: 25px;
+}
+.story__textfield {
+  margin-left: 19px;
+  padding-top: 20px;
+  padding-left: 21px;
+  width: 279px;
+
+  font-weight: bold;
+  background-color: @form-background-color;
+  border: 4px solid @form-background-color;
+  resize: none;
+}
+
+.story__textfield:hover {
+  background-color: #e5e5e5;
+  border: 4px solid #e5e5e5;
+}
+
+.story__textfield:active,
+.story__textfield:focus {
+    background-color: transparent;
+    border: 4px solid #e5e5e5;
 }
