@@ -56,16 +56,25 @@
     }
   }
 
+  & &__introduce-yourself {
+    @media (min-width: @tablet-width) {
+      padding-bottom: 0;
+    }
+  }
+
   & &__your-impression {
     @media (min-width: @tablet-width) {
       order: -1;
 
+      margin-bottom: 55px;
+      padding-bottom: 0;
       padding-right: 50px;
-
 
       border-right: 1px solid #dbdbdb;
     }
   }
+
+
 
   &__give-feedback,
   &__label {
@@ -109,6 +118,47 @@
     @media (min-width: @tablet-width) {
       margin-left: 15px;;
       margin-right: 0;
+    }
+  }
+
+  &__legend--contacts-request {
+    @media (min-width: @tablet-width) {
+      position: relative;
+
+      display: flex;
+      align-items: center;
+
+      margin-left: 185px;
+    }
+  }
+
+  &__legend--contacts-request::before,
+  &__legend--contacts-request::after {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      content: "";
+
+      flex-grow: 1;
+      flex-shrink: 0;
+
+      width: 123px;
+      height: 1px;
+
+      background: #dbdbdb;
+    }
+  }
+
+  &__legend--contacts-request::before {
+    @media (min-width: @tablet-width) {
+      top: 35px;
+      left: -65%;
+    }
+  }
+
+  &__legend--contacts-request::after {
+    @media (min-width: @tablet-width) {
+      top: 35px;
+      right: -65%;
     }
   }
 
@@ -329,6 +379,10 @@
 
 .impression-list__option:last-child {
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .impression-list__label,
