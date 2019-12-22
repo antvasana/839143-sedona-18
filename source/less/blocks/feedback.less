@@ -74,7 +74,11 @@
     }
   }
 
-
+  & &__contacts-request {
+    @media (min-width: @tablet-width) {
+      width: 100%;
+    }
+  }
 
   &__give-feedback,
   &__label {
@@ -127,8 +131,6 @@
 
       display: flex;
       align-items: center;
-
-      margin-left: 185px;
     }
   }
 
@@ -171,19 +173,9 @@
     padding-right: 10px;
   }
 
-  &__contacts-request &__label {
+  /*&__contacts-request &__label {
     padding-left: 42px;
-  }
-
-  &__label--phone {
-    display: block;
-    margin-bottom: 14px;
-  }
-
-  &__label--email {
-    display: block;
-    margin-bottom: 14px;
-  }
+  }*/
 
   & input::placeholder,
   & textarea::placeholder {
@@ -287,11 +279,19 @@
     @media (min-width: @tablet-width) {
       width: 180px;
     }
- }
+  }
 
   &__label--phone,
   &__label--email {
     position: relative;
+
+    display: block;
+    margin-bottom: 14px;
+    padding-left: 42px;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 0;
+    }
   }
 
   &__label--phone::after,
@@ -303,14 +303,18 @@
 
     width: 58px;
     height: 58px;
+
+    @media (min-width: @tablet-width) {
+      right: 0;
+    }
   }
 
   &__label--phone::after {
-    background: #e6e6e6 url("../img/icon-phone.svg") no-repeat 50%;
+    background: @element-background-color url("../img/icon-phone.svg") no-repeat 50%;
   }
 
   &__label--email::after{
-    background: #e6e6e6 url("../img/icon-mail.svg") no-repeat 50%;
+    background: @element-background-color url("../img/icon-mail.svg") no-repeat 50%;
   }
 
   &__user--phone {
@@ -328,6 +332,12 @@
 
     border: 4px solid @form-background-color;
     background-color: @form-background-color;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 31px;
+      margin-left: 0;
+      width: 100%;
+    }
 
   /*@media (min-width: @desktop-width) {
     margin-left: 10px;
@@ -350,6 +360,12 @@
 
     border: 4px solid @form-background-color;
     background-color: @form-background-color;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 58px;
+      margin-left: 0;
+      width: 100%;
+    }
 
   /*@media (min-width: @desktop-width) {
     margin-left: 10px;
