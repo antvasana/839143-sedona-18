@@ -3,12 +3,25 @@
     position: relative;
 
     margin-bottom: 40px;
+    height: 389px;
 
     background-color: @main-color;
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 30%;
-    height: 389px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 43px;
+      height: 518px;
+
+      background-image: url("../img/bg-back-tablet@1x.jpg");
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 51px;
+
+      background-image: url("../img/bg-back-desktop@1x.jpg");
+    }
   }
 
   &__invite::after{
@@ -23,10 +36,20 @@
     background-image: url("../img/bg-intro-triangle-mobile.svg");
 
     @media (min-width: @tablet-width) {
-      width: 768px;
+      left: 0;
+
+      width: 766px;
       height: 57px;
 
       background-image: url("../img/bg-intro-triangle-tablet.svg");
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 0;
+
+      width: 1198px;
+
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
     }
   }
 
@@ -53,6 +76,10 @@
       background-position: 10% 95%;
       height: 290px;
     }
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/bg-back-desktop@1x.jpg");
+    }
   }
 
   &__invite-inner::after{
@@ -67,7 +94,9 @@
     background-image: url("../img/bg-intro-triangle-mobile.svg");
 
     @media (min-width: @tablet-width) {
-      width: 768px;
+      left: 0;
+
+      width: 766px;
       height: 57px;
 
       background-image: url("../img/bg-intro-triangle-tablet.svg");
@@ -89,6 +118,12 @@
       margin-bottom: 50px;
       padding-left: 139px;
       padding-right: 139px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 55px;
+      padding-left: 355px;
+      padding-right: 355px;
     }
   }
 
