@@ -32,6 +32,11 @@
     padding-right: 60px;
   }
 
+  @media (min-width: @desktop-width) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
   &__introduction {
     padding-bottom: 22px;
 
@@ -46,6 +51,12 @@
 
       border-bottom: none;
     }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 10px;
+      padding-left: 257px;
+      padding-right: 257px;
+    }
   }
 
   & &__introduction h2 {
@@ -53,6 +64,10 @@
       margin-bottom: 30px;
       font-size: @biggest-font-size;
       line-height: @main-line-height;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 0;
     }
   }
 
@@ -186,10 +201,6 @@
   &__label--surname {
     padding-right: 10px;
   }
-
-  /*&__contacts-request &__label {
-    padding-left: 42px;
-  }*/
 
   & input::placeholder,
   & textarea::placeholder {
@@ -352,11 +363,6 @@
       margin-left: 0;
       width: 100%;
     }
-
-  /*@media (min-width: @desktop-width) {
-    margin-left: 10px;
-    width: 350px;
-  }*/
   }
 
   &__user--email {
@@ -468,7 +474,6 @@
       right: -65%;
     }
   }
-
 
   &__note {
     display: none;
