@@ -4,21 +4,21 @@
   font-size: @main-font-size;
   line-height: @big-line-height;
 
-  .site-list__item {
+  &__item {
     background-color: @main-color;
     border-bottom: 1px solid @main-color-dark;
     border-top: 1px solid @main-color-light;
   }
 
-  .site-list__item:first-child {
+  &__item:nth-child(1) {
     border-top: none;
   }
 
-  .site-list__item:last-child {
+  &__item:nth-child(4) {
     border-bottom: none;
   }
 
-  .site-list__item a {
+  &__item a {
     display: block;
     padding-top: 14px;
     padding-bottom: 15px;
@@ -27,12 +27,86 @@
     color: @another-text-color;
   }
 
-  .site-list__item a:hover {
+  &__item a:hover {
     background-color: #669ec0;
   }
 
-  .site-list__item a:active {
+  &__item a:active {
     color: rgb(148, 185, 210);
     background-color: #5496bd;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 0;
+    margin-left: 49px;
+
+    font-size: @small-font-size;
+    line-height: @main-line-height;
+
+    &__item {
+      padding-top: 18px;
+      padding-bottom: 18px;
+      background-color: transparent;
+      border-bottom: none;
+      border-top: none;
+    }
+
+    &__item:nth-child(1) {
+      margin-right: 60px;
+    }
+
+    &__item:nth-child(2) {
+      margin-right: 60px;
+    }
+
+    &__item:nth-child(3) {
+      margin-left: 90px;
+      margin-right: 70px;
+    }
+
+    &__item a {
+      display: inline;
+
+      color: #000000;
+    }
+
+    &__item a:hover {
+      background-color: transparent;
+    }
+
+    &__item a:active {
+      color: #000000;
+      background-color: transparent;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    width: 100%;
+
+    &__item:nth-child(1) {
+      margin-right: 0;
+      padding-left: 90px;
+      padding-right: 80px;
+    }
+
+    &__item:nth-child(2) {
+      padding-left: 70px;
+      padding-right: 65px;
+    }
+
+    &__item:nth-child(3) {
+      margin-right: 0;
+      padding-left: 70px;
+      padding-right: 67px;
+    }
+
+    &__item:nth-child(4) {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
   }
 }

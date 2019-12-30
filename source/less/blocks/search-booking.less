@@ -1,59 +1,95 @@
-.search-booking iframe {
+
+
+.search-booking {
+  position: relative;
+
+  & iframe {
   position: relative;
   z-index: 5;
 
   border: none;
 }
 
-.search-booking {
-  position: relative;
-
   &__map {
     position: absolute;
-    top: 286px;
+    top: 285px;
     left: 0;
     z-index: 1;
 
     margin: 0;
+
+    @media (min-width: @tablet-width) {
+      top: 265px;
+    }
   }
 
+  & h2 {
+    font-size: @big-font-size;
+    line-height: @big-line-height;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 30px;
+
+      font-size: @biggest-font-size;
+      line-height: @main-line-height;
+    }
+  }
+
+  &__trip-date {
+    margin-bottom: 40px;
+    margin-left: 14px;
+    margin-right: 14px;
+
+    font-size: @small-font-size;
+    line-height: @main-line-height;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 150px;
+      margin-right: 150px;
+
+      line-height: @medium-line-height;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 370px;
+      margin-right: 370px;
+    }
+  }
+
+  &__trip-date span {
+    @media (min-width: @tablet-width) {
+      margin-left: 90px;
+      margin-right: 90px;
+    }
+  }
+
+  &__link {
+    display: block;
+
+    margin: 0 auto;
+    margin-bottom: 49px;
+    padding: 18px 47px;
+    width: 280px;
+
+    font-size: @big-font-size;
+    line-height: @main-line-height;
+    font-weight: bold;
+    color: @another-text-color;
+    background-color: @main-color;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 58px;
+      width: 458px;
+    }
+  }
+
+  &__link:hover {
+    background-color: #669ec0;
+  }
+
+  &__link:focus,
+  &__link:active {
+    color: rgb(148, 185, 210);
+      background-color: #5496bd;
+  }
 }
-
-.search-booking h2 {
-  font-size: @big-font-size;
-  line-height: @big-line-height;
-}
-
-.search-booking .search-booking__trip-date {
-  margin-bottom: 40px;
-
-  font-size: @small-font-size;
-  line-height: @main-line-height;
-}
-
-.search-booking__link {
-  display: block;
-
-  margin: 0 auto;
-  margin-bottom: 49px;
-  padding: 18px 47px;
-  width: 280px;
-
-  font-size: @big-font-size;
-  line-height: @main-line-height;
-  font-weight: bold;
-  color: @another-text-color;
-  background-color: @main-color;
-}
-
-.search-booking__link:hover {
-  background-color: #669ec0;
-}
-
-.search-booking__link:focus,
-.search-booking__link:active {
-  color: rgb(148, 185, 210);
-    background-color: #5496bd;
-}
-
-

@@ -1,10 +1,31 @@
 .presentation {
+  padding-bottom: 33px;
   padding-left: 24px;
   padding-right: 24px;
 
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 75px;
+    padding-left: 160px;
+    padding-right: 160px;
+
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 77px;
+    padding-left: 380px;
+    padding-right: 380px;
+  }
+
   &__title {
-    font-size: @main-font-size;
-    line-height: @main-line-height;
+    .main-font();
+
+    @media (min-width: @tablet-width) {
+      font-size: @biggest-font-size;
+      line-height: @main-line-height;
+    }
   }
 
   &__review {
