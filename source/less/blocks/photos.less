@@ -88,6 +88,30 @@
     }
   }
 
+  &__text::before {
+    content: "";
+    position: absolute;
+    bottom: 21px;
+    left: 0;
+
+    width: 23px;
+    height: 21px;
+
+    background: url("../img/icon-like.svg") no-repeat;
+
+    opacity: 0.3;
+
+    @media (min-width: @tablet-width) {
+      bottom: 32px;
+
+      cursor: pointer;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+
   &__title,
   &__author-name,
   &__likes {
@@ -101,10 +125,16 @@
   }
 
   &__likes {
-    font-weight: bold;
-  }
+    content: "";
+    position: absolute;
+    bottom: 17px;
+    left: 35px;
 
-  &__title {
-    margin-bottom: 0;
+    font-weight: bold;
+
+    @media (min-width: @tablet-width) {
+      bottom: 28px;
+      right: 0;
+    }
   }
 }
