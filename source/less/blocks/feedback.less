@@ -679,6 +679,16 @@
   }
 }
 
+.impression-list__label:hover::before,
+.visited-sights-list__label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.impression-list__label:active::before,
+.visited-sights-list__label:active::before {
+  background-color: #d5d5d5;
+}
+
 .impression-list__input:checked + .impression-list__label::after {
   content: "";
   position: absolute;
@@ -694,6 +704,10 @@
   @media (min-width: @tablet-width) {
     left: 15px;
   }
+}
+
+.impression-list__input:checked + .impression-list__label:active::after {
+  background-color: #a4a4a4;
 }
 
 .visited-sights-list {
@@ -748,6 +762,10 @@
 
   background-image: url("../img/icon-tick.svg");
   border-radius: 50%;
+}
+
+.visited-sights-list__input:checked + .visited-sights-list__label:active::after {
+  opacity: 0.3;
 }
 
 .visited-sights-list__input:checked + .visited-sights-list__label--mountain-bell::after {
