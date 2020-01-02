@@ -28,7 +28,11 @@
         </li>
       </ul>
       <a class="main-nav__logo" href="#">
-        <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип сайта Седона">
+        </picture>
       </a>
     </nav>
   </header>
@@ -53,7 +57,16 @@
             <span class="reasons__number">&ndash; &#8470; 1 &ndash;</span>
             <p class="reasons__description">седона не аттракцион для &nbsp;туристов, там течет своя жизнь</p>
           </div>
-          <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Седона">
+          <div class="reasons__wrapper">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+              <img class="reasons__image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x alt="
+                Седона">
+            </picture>
+          </div>
         </li>
         <li class="reasons__item reasons__item--devil-bridge">
           <div class="reasons__bridge">
@@ -61,17 +74,28 @@
             <span class="reasons__number">&ndash; &#8470; 2 &ndash;</span>
             <p class="reasons__description">да, по нему можно пройти! если вы осмелитесь, конечно</p>
           </div>
-          <img src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола">
+          <div class="reasons__wrapper">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+              <img class="reasons__image" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x"
+                alt="Мост дьявола">
+            </picture>
+          </div>
         </li>
         <li class="reasons__item reasons__item--sights">
           <h2>небольшая площадь</h2>
           <span class="reasons__number">&ndash; &#8470; 3 &ndash;</span>
-          <p class="reasons__description">все интересные места <span class="reasons__second-line">находятся очень</span> близко</p>
+          <p class="reasons__description">все интересные места <span class="reasons__second-line">находятся очень</span>
+            близко</p>
         </li>
         <li class="reasons__item reasons__item--beautiful-road">
           <h2>красивая дорога</h2>
           <span class="reasons__number">&ndash; &#8470; 4 &ndash;</span>
-          <p class="reasons__description">ехать в седону из <span class="reasons__second-line">лас-вегаса совсем</span> не скучно!</p>
+          <p class="reasons__description">ехать в седону из <span class="reasons__second-line">лас-вегаса совсем</span>
+            не скучно!</p>
         </li>
         <li class="reasons__item reasons__item--few-tourists">
           <h2>мало туристов</h2>
@@ -88,7 +112,8 @@
             </li>
             <li class="more-reasons__item">
               <h3 class="more-reasons__gift">сувениры</h3>
-              <p class="more-reasons__description"><span class="more-reasons__first-line">не только китайского,</span> но и местного производства!</p>
+              <p class="more-reasons__description"><span class="more-reasons__first-line">не только китайского,</span>
+                но и местного производства!</p>
             </li>
             <li class="more-reasons__item">
               <h3 class="more-reasons__food">еда</h3>
@@ -106,12 +131,18 @@
       <p class="search-booking__trip-date"><span>укажите предполагаемые даты поездки,</span>
         и мы покажем вам лучшие предложения гостиниц в седоне </p>
       <button class="search-booking__button btn" href="search.html">найти гостиницу</button>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565746075!2d-111.83015811893398!3d34.8544438157255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+Arizona+86336%2C+EE.+UU.!5e0!3m2!1ses-419!2sdo!4v1561495349258!5m2!1ses-419!2sdo"
-      width="320" height="350" style="border:0" allowfullscreen>
-    </iframe>
-    <p class="search-booking__map"><img src="img/bg-map-mobile@1x.jpg" width="320" height="350"
-        alt="поиск гостиницы в Седоне"></p>
+      <p class="search-booking__map">
+        <!--<iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565746075!2d-111.83015811893398!3d34.8544438157255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+Arizona+86336%2C+EE.+UU.!5e0!3m2!1ses-419!2sdo!4v1561495349258!5m2!1ses-419!2sdo"
+          width="320" height="350" style="border:0" allowfullscreen>
+        </iframe>-->
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <img class="search-booking__map" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x"
+            alt="поиск гостиницы в Седоне">
+        </picture>
+      </p>
     </section>
   </main>
   <footer class="page-footer">
@@ -120,7 +151,8 @@
       <h2 class="visually-hidden social__title">Седона в соцсетях</h2>
       <ul class="social__list social-list">
         <li class="social-list__button">
-          <a href="https://www.twitter.com/htmlacademy" class="social-list__btn twitter" target="_blank"><span class="visually-hidden">
+          <a href="https://www.twitter.com/htmlacademy" class="social-list__btn twitter" target="_blank"><span
+              class="visually-hidden">
               Седона в Твиттере</span>
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px"
@@ -170,8 +202,7 @@
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"" aria-label=" HTML Academy, 2-й
         интенсив" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
-          <path
-            d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399
+          <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399
             12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02
             3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014
             1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48

@@ -1,25 +1,31 @@
-
-
 .search-booking {
-  position: relative;
 
-  & iframe {
-  position: relative;
-  z-index: 5;
 
-  border: none;
-}
+  &__map picture {
+    position: relative;
+  }
 
-  &__map {
+  &__map picture::before {
+    content: "";
     position: absolute;
-    top: 285px;
-    left: 0;
-    z-index: 1;
+    bottom: 170px;
+    left: 45%;
 
-    margin: 0;
+    width: 27px;
+    height: 27px;
+
+    background-image: url("../img/icon-map-marker.svg");
+    background-repeat: no-repeat;
+    border-radius: 50%;
 
     @media (min-width: @tablet-width) {
-      top: 265px;
+      bottom: 165px;
+      left: 48%;
+    }
+
+    @media (min-width: @desktop-width) {
+      bottom: 165px;
+      left: 48.5%;
     }
   }
 
