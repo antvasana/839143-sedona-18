@@ -25,15 +25,49 @@
 
     font-weight: bold;
     color: @another-text-color;
+
+    @media (min-width: @tablet-width) {
+      display: inline;
+
+      color: #000000;
+    }
   }
 
   &__item a:hover {
     background-color: #669ec0;
+
+    @media (min-width: @tablet-width) {
+      color: @main-color;
+      background-color: transparent;
+    }
   }
 
   &__item a:active {
     color: rgb(148, 185, 210);
     background-color: #5496bd;
+
+    @media (min-width: @tablet-width) {
+      color: rgba(0, 0, 0, 0.3);
+      background-color: transparent;
+    }
+  }
+
+  &__item .current {
+    @media (min-width: @tablet-width) {
+      color: #584c44;
+    }
+  }
+
+  &__item .current:hover {
+    @media (min-width: @tablet-width) {
+      color: #604e43;
+    }
+  }
+
+  &__item .current:active {
+    @media (min-width: @tablet-width) {
+      color: rgba(118, 99, 87, 0.3);
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -65,21 +99,6 @@
     &__item:nth-child(3) {
       margin-left: 90px;
       margin-right: 70px;
-    }
-
-    &__item a {
-      display: inline;
-
-      color: #000000;
-    }
-
-    &__item a:hover {
-      background-color: transparent;
-    }
-
-    &__item a:active {
-      color: #000000;
-      background-color: transparent;
     }
   }
 

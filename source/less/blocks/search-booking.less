@@ -63,7 +63,7 @@
     }
   }
 
-  &__link {
+  &__button {
     display: block;
 
     margin: 0 auto;
@@ -83,13 +83,17 @@
     }
   }
 
-  &__link:hover {
+  &__button:hover {
     background-color: #669ec0;
   }
 
-  &__link:focus,
-  &__link:active {
+  &__button:focus,
+  &__button:active {
     color: rgb(148, 185, 210);
       background-color: #5496bd;
+  }
+
+  &__button[disabled] {
+    background-color: #e5e5e5;
   }
 }

@@ -32,14 +32,21 @@
     top: -8px;
     left: -50px;
 
-    width: 37px;
-    height: 36px;
+    width: 75px;
+    height: 72px;
 
     background: url("../img/icon-house.svg") no-repeat;
+    background-size: 50%;
 
     @media (min-width: @tablet-width) {
-      top: -40px;
-      left: 0;
+      top: -90px;
+      left: 90px;
+
+      background-size: 100%;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 133px;
     }
   }
 
@@ -53,10 +60,22 @@
     top: -8px;
     left: -50px;
 
-    width: 32px;
-    height: 36px;
+    width: 64px;
+    height: 76px;
 
     background: url("../img/icon-gift.svg") no-repeat;
+    background-size: 50%;
+
+    @media (min-width: @tablet-width) {
+      top: -90px;
+      left: 55px;
+
+      background-size: 100%;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 170px;
+    }
   }
 
   &__food {
@@ -69,10 +88,22 @@
     top: -8px;
     left: -55px;
 
-    width: 40px;
-    height: 36px;
+    width: 77px;
+    height: 70px;
 
     background: url("../img/icon-burger.svg") no-repeat;
+    background-size: 50%;
+
+    @media (min-width: @tablet-width) {
+      top: -90px;
+      left: 73px;
+
+      background-size: 100%;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 125px;
+    }
   }
 
   &__item p {

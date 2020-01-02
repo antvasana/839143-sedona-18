@@ -101,7 +101,7 @@
     }
   }
 
-  & &__contacts-request {
+  &__contacts-wrapper {
     @media (min-width: @desktop-width) {
       display: flex;
       justify-content: space-between;
@@ -342,6 +342,18 @@
     }
   }
 
+  /*&__phone {
+    @media (min-width: @desktop-width) {
+      width: 45%;
+    }
+  }
+
+  &__email {
+    @media (min-width: @desktop-width) {
+      width: 45%;
+    }
+  }*/
+
   &__label--phone,
   &__label--email {
     position: relative;
@@ -383,14 +395,14 @@
   &__label--phone::after {
     @media (min-width: @desktop-width) {
       top: 0;
-      right: -140%;
+      right: -143%;
     }
   }
 
   &__label--email::after {
     @media (min-width: @desktop-width) {
       top: 0;
-      right: -187%;
+      right: -194%;
     }
   }
 
@@ -426,8 +438,6 @@
     }
 
     @media (min-width: @desktop-width) {
-      /*margin-bottom: 31px;
-      margin-left: 0;*/
       width: 250px;
       height: 58px;
     }
@@ -679,6 +689,16 @@
   }
 }
 
+.impression-list__label:hover::before,
+.visited-sights-list__label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.impression-list__label:active::before,
+.visited-sights-list__label:active::before {
+  background-color: #d5d5d5;
+}
+
 .impression-list__input:checked + .impression-list__label::after {
   content: "";
   position: absolute;
@@ -694,6 +714,10 @@
   @media (min-width: @tablet-width) {
     left: 15px;
   }
+}
+
+.impression-list__input:checked + .impression-list__label:active::after {
+  background-color: #a4a4a4;
 }
 
 .visited-sights-list {
@@ -748,6 +772,10 @@
 
   background-image: url("../img/icon-tick.svg");
   border-radius: 50%;
+}
+
+.visited-sights-list__input:checked + .visited-sights-list__label:active::after {
+  opacity: 0.3;
 }
 
 .visited-sights-list__input:checked + .visited-sights-list__label--mountain-bell::after {
