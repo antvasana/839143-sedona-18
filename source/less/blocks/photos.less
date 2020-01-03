@@ -27,7 +27,7 @@
 
   @media (min-width: @tablet-width) {
     &__item:not(:nth-child(1)) {
-      max-width: 50%
+      max-width: 50%;
     }
 
     &__item:nth-child(1) {
@@ -44,6 +44,23 @@
   }
 
   @media (min-width: @desktop-width) {
+    &__item:nth-child(2),
+    &__item:nth-child(3) {
+      max-width: 33%;
+    }
+
+    &__item:nth-child(4) {
+      max-width: 34%;
+    }
+
+    &__item:not(:nth-child(1)) {
+      height: 267px;
+    }
+
+    &__item:nth-child(1) {
+      height: 359px;
+    }
+
     &__item:not(:nth-child(3)) {
       background-color: transparent;
     }
@@ -85,6 +102,16 @@
 
       color: #ffffff;
       background-color: rgba(0, 1, 1, 0.2);
+    }
+  }
+
+  &__item:nth-child(4) &__text {
+    @media (min-width: @desktop-width) {
+
+
+      height: 75px;
+
+      padding-bottom: 0;
     }
   }
 

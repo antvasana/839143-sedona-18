@@ -50,7 +50,12 @@
     </div>
     <ul class="photos">
       <li class="photos__item">
-        <img class="photos__image photos__image--sunset" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фото Бориса">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+          <img class="photos__image-sunset" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x"
+            alt="Фото Бориса">
+        </picture>
         <div class="photos__text">
           <h2 class="photos__title">неродные просторы</h2>
           <cite class="photos__author-name">Автор фото: Борис</cite>
@@ -58,7 +63,12 @@
         </div>
       </li>
       <li class="photos__item">
-        <img class="photos__image-cactus" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фото Сергея">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+          <img class="photos__image-cactus" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x"
+            alt="Фото Сергея">
+        </picture>
         <div class="photos__text">
           <h2 class="photos__title">местная растительность</h2>
           <cite class="photos__author-name">Автор фото: Сергей</cite>
@@ -66,7 +76,12 @@
         </div>
       </li>
       <li class="photos__item">
-        <img class="photos__image-roads" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Фото Петра">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+          <img class="photos__image-roads" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x"
+            alt="Фото Петра">
+        </picture>
         <div class="photos__text">
           <h2 class="photos__title">дорога на север</h2>
           <cite class="photos__author-name">Автор фото: Петр</cite>
@@ -74,7 +89,12 @@
         </div>
       </li>
       <li class="photos__item">
-        <img class="photos__image-bridge" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Фото Антона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+          <img class="photos__image-bridge" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x"
+            alt="Фото Антона">
+        </picture>
         <div class="photos__text">
           <h2 class="photos__title">мост дьявола</h2>
           <cite class="photos__author-name">Автор фото: Антон</cite>
