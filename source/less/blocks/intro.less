@@ -1,31 +1,32 @@
 .intro {
   &__invite {
     position: relative;
-
     margin-bottom: 40px;
     height: 389px;
 
     background-color: @main-color;
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 0 30%;
+    background-position: 55% 35%;
 
     @media
       (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
-        background-image: url("img/bg-back-mobile@2x.jpg");
-    }
+        background-image: url("../img/bg-back-mobile@2x.jpg");
+      }
 
     @media (min-width: @tablet-width) {
       margin-bottom: 43px;
       height: 518px;
 
       background-image: url("../img/bg-back-tablet@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 25% 80%;
 
       @media
       (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
-        background-image: url("img/bg-back-tablet@2x.jpg");
+        background-image: url("../img/bg-back-tablet@2x.jpg");
       }
     }
 
@@ -37,7 +38,7 @@
       @media
       (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
-        background-image: url("img/bg-back-desktop@2x.jpg");
+        background-image: url("../img/bg-back-desktop@2x.jpg");
       }
     }
   }
@@ -69,11 +70,6 @@
     }
   }
 
-  &__image {
-    padding-top: 90px;
-    padding-bottom: 85px;
-  }
-
   &__invite-inner {
     position: relative;
 
@@ -88,7 +84,7 @@
     @media
       (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
-        background-image: url("img/bg-back-mobile@2x.jpg");
+        background-image: url("../img/bg-back-mobile@2x.jpg");
     }
 
     @media (min-width: @tablet-width) {
@@ -101,7 +97,7 @@
       @media
       (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
-        background-image: url("img/bg-back-tablet@2x.jpg");
+        background-image: url("../img/bg-back-tablet@2x.jpg");
       }
     }
 
@@ -114,7 +110,7 @@
       @media
       (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
-        background-image: url("img/bg-back-desktop@2x.jpg");
+        background-image: url("../img/bg-back-desktop@2x.jpg");
       }
     }
   }
@@ -149,6 +145,14 @@
   &__image-inner {
     padding-top: 52px;
     padding-bottom: 67px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 60px;
+      padding-top: 0;
+      padding-bottom: 0;
+      width: 460px;
+      height: 80px;
+    }
   }
 
   &__description {
@@ -199,5 +203,17 @@
   &__reasons {
     font-size: @small-font-size;
     line-height: @main-line-height;
+  }
+}
+
+.intro__index {
+  padding-top: 87px;
+  padding-bottom: 80px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 450px;
+    height: 350px;
   }
 }
