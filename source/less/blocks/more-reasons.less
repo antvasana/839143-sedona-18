@@ -13,6 +13,12 @@
     text-align: center;
   }
 
+  &__item {
+    @media (min-width: @tablet-width) {
+      width: 33%;
+    }
+  }
+
   &__item h3 {
     .main-font();
 
@@ -175,9 +181,9 @@
     }
   }
 
- &__item:nth-child(1) &__first-line {
+ /*&__item:nth-child(1) &__first-line {
     @media (min-width: @tablet-width) {
-      padding-right: 25px;
+      padding-right: 0;
     }
 
     @media (min-width: @desktop-width) {
@@ -187,7 +193,7 @@
 
   &__item:nth-child(1) &__second-line {
     @media (min-width: @tablet-width) {
-      padding-right: 25px;
+      padding-right: 0;
     }
 
     @media (min-width: @desktop-width) {
@@ -230,5 +236,5 @@
     padding-left: 0;
     padding-right: 0;
   }
-}
+}*/
 }

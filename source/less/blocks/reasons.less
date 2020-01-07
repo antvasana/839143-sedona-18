@@ -46,12 +46,26 @@
     padding-right: 17px;
 
     @media (min-width: @tablet-width) {
-        padding-left: 47px;
-        padding-right: 47px;
+        width: 33%;
       }
   }
 
+  .reasons__wrapper {
+    overflow: hidden;
+    height: 260px;
+
+    @media (min-width: @tablet-width) {
+      width: 67%;
+      height: 256px;
+    }
+  }
+
   .reasons__city {
+    @media (min-width: @tablet-width) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
       @media (min-width: @desktop-width) {
         padding-left: 65px;
         padding-right: 65px;
@@ -59,6 +73,11 @@
   }
 
   .reasons__bridge {
+    @media (min-width: @tablet-width) {
+      padding-left: 47px;
+      padding-right: 47px;
+    }
+
       @media (min-width: @desktop-width) {
         padding-left: 90px;
         padding-right: 90px;
@@ -150,15 +169,6 @@
 
     @media (min-width: @tablet-width) {
       top: 0;
-    }
-  }
-
-   .reasons__wrapper {
-    overflow: hidden;
-    height: 260px;
-
-    @media (min-width: @tablet-width) {
-      height: 256px;
     }
   }
 
