@@ -4,16 +4,16 @@
   "private": true,
   "description": "Личный проект «Седона» от HTML Academy",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "^9.5.1",
-    "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2",
+    "autoprefixer": "9.5.x",
+    "browser-sync": "2.26.x",
+    "gulp": "4.0.x",
     "gulp-less": "4.0.x",
     "gulp-plumber": "1.2.x",
-    "gulp-postcss": "8.0.x",
     "gulp-sourcemaps": "2.6.x",
+    "gulp-postcss": "8.0.x",
+    "@htmlacademy/editorconfig-cli": "1.x",
     "stylelint": "10.1.x",
-    "stylelint-config-htmlacademy": "^0.1.4"
+    "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -37,8 +37,5 @@
   ],
   "engines": {
     "node": "8.16"
-  },
-  "dependencies": {
-    "test": "^0.6.0"
   }
 }
