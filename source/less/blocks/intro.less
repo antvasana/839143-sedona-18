@@ -70,6 +70,19 @@
     }
   }
 
+  &__image {
+    padding-top: 90px;
+    padding-bottom: 85px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 60px;
+      padding-top: 0;
+      padding-bottom: 0;
+      width: 460px;
+      height: 350px;
+    }
+  }
+
   &__invite-inner {
     position: relative;
 
@@ -203,17 +216,5 @@
   &__reasons {
     font-size: @small-font-size;
     line-height: @main-line-height;
-  }
-}
-
-.intro__index {
-  padding-top: 87px;
-  padding-bottom: 80px;
-
-  @media (min-width: @tablet-width) {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    width: 450px;
-    height: 350px;
   }
 }

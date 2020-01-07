@@ -20,4 +20,99 @@
       right: 44%;
     }
   }
+
+  &__toggle {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+
+    display: block;
+    width: 23px;
+    height: 22px;
+
+    background-color: transparent;
+
+    cursor: pointer;
+    border: none;
+  }
+
+  &--closed &__toggle::before {
+    content: "";
+
+    position: absolute;
+    bottom: 17px;
+    right: 0;
+
+    display: block;
+    width: 23px;
+    height: 4px;
+
+    background-color: @main-color;
+    box-shadow: 0 8px 0 0 @main-color, 0 16px 0 0 @main-color;
+
+    cursor: pointer;
+  }
+
+  &--closed &__toggle:hover::before,
+  &--closed &__toggle:active::before {
+    background-color: @main-color;
+    box-shadow: 0 8px 0 0 @main-color, 0 16px 0 0 @main-color;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 24px;
+  right: 24px;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    right: -2px;
+
+    width: 28px;
+    height: 4px;
+
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.main-nav--opened .main-nav__logo {
+  bottom: -90px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav__logo {
+    bottom: -35px;
+  }
+
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
 }
