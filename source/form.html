@@ -28,7 +28,11 @@
         </li>
       </ul>
       <a class="main-nav__logo" href="#">
-        <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип сайта Седона">
+        </picture>
       </a>
     </nav>
   </header>
@@ -69,13 +73,13 @@
         <div class="feedback__contacts-wrapper">
           <div class="feedback__phone">
             <label class="feedback__label feedback__label--phone" for="feedback-phone">контактный телефон*: </label>
-            <input class="feedback__user feedback__user--phone" id="feedback-phone" type="text" name="feedback-phone"
+            <input class="feedback__user feedback__user--phone" id="feedback-phone" type="tel" name="feedback-phone"
               placeholder="Введите телефон" required>
           </div>
           <div class="feedback__email">
             <label class="feedback__label feedback__label--email" for="feedback-email">электронная почта*:</label>
             <input class="feedback__user feedback__user--email" id="feedback-email" type="email" name="feedback-email"
-              placeholder="Введите e-mail" required>
+            pattern="7[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Введите e-mail" required>
           </div>
         </div>
       </fieldset>

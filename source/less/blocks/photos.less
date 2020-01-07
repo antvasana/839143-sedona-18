@@ -27,7 +27,7 @@
 
   @media (min-width: @tablet-width) {
     &__item:not(:nth-child(1)) {
-      max-width: 50%
+      max-width: 50%;
     }
 
     &__item:nth-child(1) {
@@ -44,6 +44,15 @@
   }
 
   @media (min-width: @desktop-width) {
+    &__item:not(:nth-child(1)) {
+      max-width: 33.33%;
+      height: 267px;
+    }
+
+    &__item:nth-child(1) {
+      height: 359px;
+    }
+
     &__item:not(:nth-child(3)) {
       background-color: transparent;
     }
@@ -54,32 +63,23 @@
   }
 
   &__item img {
-    position: relative;
-    z-index: 5;
-
-    padding-top: 22px;
-
-    @media (min-width: @tablet-width) {
-      padding-top: 0;
-    }
+    object-fit: contain;
   }
 
-  &__text {
-    position: relative;
-
-    padding-bottom: 53px;
-
+  &__description {
     @media (min-width: @tablet-width) {
+      display: flex;
+      justify-content: space-between;
       padding-bottom: 21px;
       padding-left: 20px;
     }
 
     @media (min-width: @desktop-width) {
+      position: relative;
       bottom: 86px;
       z-index: 10;
 
       padding-top: 1px;
-      padding-bottom: 1px;
       width: 100%;
       height: 80px;
 
@@ -88,23 +88,37 @@
     }
   }
 
-  &__text::before {
-    content: "";
-    position: absolute;
-    bottom: 21px;
-    left: 0;
-
-    width: 23px;
-    height: 21px;
-
-    background: url("../img/icon-like.svg") no-repeat;
-
-    opacity: 0.3;
-
+  &__description--sunset {
     @media (min-width: @tablet-width) {
-      bottom: 32px;
+      padding-right: 21px;
+    }
+  }
 
-      cursor: pointer;
+  &__description--cactus {
+    @media (min-width: @tablet-width) {
+      padding-right: 30px;
+    }
+  }
+
+  &__description--roads {
+    @media (min-width: @tablet-width) {
+      padding-right: 37px;
+    }
+  }
+
+  &__description--bridge {
+    @media (min-width: @tablet-width) {
+      padding-right: 29px;
+    }
+  }
+
+  &__item:nth-child(4) &__text {
+    @media (min-width: @desktop-width) {
+
+
+      height: 75px;
+
+      padding-bottom: 0;
     }
   }
 
@@ -125,16 +139,35 @@
   }
 
   &__likes {
-    content: "";
-    position: absolute;
-    bottom: 17px;
-    left: 35px;
+    margin-bottom: 23px;
 
     font-weight: bold;
 
     @media (min-width: @tablet-width) {
-      bottom: 28px;
-      right: 0;
+      margin-bottom: 0;
+      padding-top: 15px;
+    }
+  }
+
+  &__icon-like {
+    padding-right: 13px;
+
+    opacity: 0.3;
+
+    @media (min-width: @tablet-width) {
+      padding-right: 10px;
+
+      cursor: pointer;
+    }
+
+    @media (min-width: @desktop-width) {
+      opacity: 1;
+    }
+  }
+
+  &__icon-like path {
+    @media (min-width: @desktop-width) {
+      fill: #ffffff;
     }
   }
 }
