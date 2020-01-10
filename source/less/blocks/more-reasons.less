@@ -28,11 +28,11 @@
     }
   }
 
-  &__habitation {
+  &__house {
     position: relative;
   }
 
-  &__habitation::before {
+  &__house::before {
     content: "";
     position: absolute;
     top: -8px;
@@ -46,13 +46,13 @@
 
     @media (min-width: @tablet-width) {
       top: -90px;
-      left: 90px;
+      left: 70px;
 
       background-size: 100%;
     }
 
     @media (min-width: @desktop-width) {
-      left: 133px;
+      left: 140px;
     }
   }
 
@@ -74,13 +74,13 @@
 
     @media (min-width: @tablet-width) {
       top: -90px;
-      left: 55px;
+      left: 75px;
 
       background-size: 100%;
     }
 
     @media (min-width: @desktop-width) {
-      left: 170px;
+      left: 145px;
     }
   }
 
@@ -101,14 +101,14 @@
     background-size: 50%;
 
     @media (min-width: @tablet-width) {
-      top: -90px;
+      top: -88px;
       left: 73px;
 
       background-size: 100%;
     }
 
     @media (min-width: @desktop-width) {
-      left: 125px;
+      left: 140px;
     }
   }
 
@@ -165,76 +165,34 @@
 
   &__item:nth-child(2) p {
     @media (min-width: @tablet-width) {
-      padding-left: 1px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
 
     @media (min-width: @desktop-width) {
-      padding-left: 60px;
-      padding-right: 60px;
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+  }
+
+  &__item:nth-child(2) span {
+    @media (min-width: @desktop-width) {
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 
   &__item:nth-child(3) p {
+    padding-right: 20px;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 23px;
+      padding-right: 23px;
+    }
+
     @media (min-width: @desktop-width) {
       padding-left: 28px;
       padding-right: 28px;
     }
   }
-
- /*&__item:nth-child(1) &__first-line {
-    @media (min-width: @tablet-width) {
-      padding-right: 0;
-    }
-
-    @media (min-width: @desktop-width) {
-      padding-right: 0;
-    }
-  }
-
-  &__item:nth-child(1) &__second-line {
-    @media (min-width: @tablet-width) {
-      padding-right: 0;
-    }
-
-    @media (min-width: @desktop-width) {
-      padding-right: 0;
-    }
-  }
-
-  &__item:nth-child(1) &__third-line {
-    @media (min-width: @tablet-width) {
-      padding-right: 20px;
-    }
-
-    @media (min-width: @desktop-width) {
-      padding-right: 0;
-    }
-  }
-
-  &__item:nth-child(2) &__first-line {
-    @media (min-width: @desktop-width) {
-      padding-left: 60px;
-      padding-right: 45px;
-    }
-}
-
-  &__item:nth-child(3) &__first-line {
-    padding-right: 20px;
-
-  @media (min-width: @tablet-width) {
-    padding-right: 0;
-  }
-}
-
-&__item:nth-child(3) &__second-line {
-  @media (min-width: @tablet-width) {
-    padding-left: 20px;
-    padding-right: 25px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}*/
 }
