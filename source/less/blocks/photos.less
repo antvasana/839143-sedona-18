@@ -114,11 +114,9 @@
 
   &__item:nth-child(4) &__text {
     @media (min-width: @desktop-width) {
-
+      padding-bottom: 0;
 
       height: 75px;
-
-      padding-bottom: 0;
     }
   }
 
@@ -139,6 +137,7 @@
   }
 
   &__likes {
+    margin-top: 5px;
     margin-bottom: 23px;
 
     font-weight: bold;
@@ -153,21 +152,31 @@
     padding-right: 13px;
 
     opacity: 0.3;
+    cursor: pointer;
+
 
     @media (min-width: @tablet-width) {
       padding-right: 10px;
-
-      cursor: pointer;
     }
 
     @media (min-width: @desktop-width) {
+      fill: #ffffff;
       opacity: 1;
     }
   }
 
-  &__icon-like path {
+  /*&__icon-like path {
     @media (min-width: @desktop-width) {
       fill: #ffffff;
+    }*/
+
+  &__number {
+    position: relative;
+
+    bottom: 8px;
+
+    @media (min-width: @desktop-width) {
+      bottom: 6px;
     }
   }
 }

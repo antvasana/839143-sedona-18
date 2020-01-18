@@ -1241,6 +1241,10 @@ input[type="radio"].visually-hidden {
   padding-left: 0;
   list-style: none;
   text-align: left;
+  /*&__icon-like path {
+    @media (min-width: @desktop-width) {
+      fill: #ffffff;
+    }*/
 }
 @media (min-width: 768px) {
   .photos {
@@ -1346,8 +1350,8 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 1200px) {
   .photos__item:nth-child(4) .photos__text {
-    height: 75px;
     padding-bottom: 0;
+    height: 75px;
   }
 }
 .photos__title {
@@ -1364,6 +1368,7 @@ input[type="radio"].visually-hidden {
   text-transform: none;
 }
 .photos__likes {
+  margin-top: 5px;
   margin-bottom: 23px;
   font-weight: bold;
 }
@@ -1376,21 +1381,26 @@ input[type="radio"].visually-hidden {
 .photos__icon-like {
   padding-right: 13px;
   opacity: 0.3;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .photos__icon-like {
     padding-right: 10px;
-    cursor: pointer;
   }
 }
 @media (min-width: 1200px) {
   .photos__icon-like {
+    fill: #ffffff;
     opacity: 1;
   }
 }
+.photos__number {
+  position: relative;
+  bottom: 8px;
+}
 @media (min-width: 1200px) {
-  .photos__icon-like path {
-    fill: #ffffff;
+  .photos__number {
+    bottom: 6px;
   }
 }
 .video {
