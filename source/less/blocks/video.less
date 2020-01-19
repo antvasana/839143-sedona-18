@@ -132,17 +132,19 @@
     }
   }
 
-  &__replay path,
-  &__subtitles path,
-  &__fullscreen polygon {
+  &__replay,
+  &__subtitles,
+  &__fullscreen {
+    fill: #5c6870;
+
     @media (min-width: @tablet-width) {
       fill: #ffffff;
     }
   }
 
-  &__replay:hover path,
-  &__subtitles:hover path,
-  &__fullscreen:hover polygon {
+  &__replay:hover,
+  &__subtitles:hover,
+  &__fullscreen:hover {
     fill: #333333;
 
     @media (min-width: @tablet-width) {
@@ -152,9 +154,9 @@
     }
   }
 
-  &__replay:active path,
-  &__subtitles:active path,
-  &__fullscreen:active polygon {
+  &__replay:active,
+  &__subtitles:active,
+  &__fullscreen:active {
     fill: #333333;
 
     opacity: 0.3;

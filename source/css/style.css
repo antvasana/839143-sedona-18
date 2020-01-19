@@ -1542,36 +1542,41 @@ input[type="radio"].visually-hidden {
     top: 35px;
   }
 }
+.video__replay,
+.video__subtitles,
+.video__fullscreen {
+  fill: #5c6870;
+}
 @media (min-width: 768px) {
-  .video__replay path,
-  .video__subtitles path,
-  .video__fullscreen polygon {
+  .video__replay,
+  .video__subtitles,
+  .video__fullscreen {
     fill: #ffffff;
   }
 }
-.video__replay:hover path,
-.video__subtitles:hover path,
-.video__fullscreen:hover polygon {
+.video__replay:hover,
+.video__subtitles:hover,
+.video__fullscreen:hover {
   fill: #333333;
 }
 @media (min-width: 768px) {
-  .video__replay:hover path,
-  .video__subtitles:hover path,
-  .video__fullscreen:hover polygon {
+  .video__replay:hover,
+  .video__subtitles:hover,
+  .video__fullscreen:hover {
     fill: #ffffff;
     opacity: 0.6;
   }
 }
-.video__replay:active path,
-.video__subtitles:active path,
-.video__fullscreen:active polygon {
+.video__replay:active,
+.video__subtitles:active,
+.video__fullscreen:active {
   fill: #333333;
   opacity: 0.3;
 }
 @media (min-width: 768px) {
-  .video__replay:active path,
-  .video__subtitles:active path,
-  .video__fullscreen:active polygon {
+  .video__replay:active,
+  .video__subtitles:active,
+  .video__fullscreen:active {
     fill: #ffffff;
     opacity: 0.3;
   }
