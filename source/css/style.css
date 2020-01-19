@@ -574,8 +574,14 @@ input[type="radio"].visually-hidden {
 .social-list__button a:active {
   background-color: #5496bd;
 }
-.social-list__btn:focus path,
-.social-list__btn:active path {
+.social-list__twitter,
+.social-list__facebook,
+.social-list__youtube {
+  fill: #ffffff;
+}
+.social-list__twitter:active,
+.social-list__facebook:active,
+.social-list__youtube:active {
   fill: rgba(255, 255, 255, 0.3);
 }
 .copyright {
