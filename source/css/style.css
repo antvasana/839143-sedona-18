@@ -603,11 +603,10 @@ input[type="radio"].visually-hidden {
 .copyright__link {
   margin-top: 10px;
 }
-.copyright__link:hover path {
+.copyright__logo-htmlacademy:hover {
   fill: #81b3d2;
 }
-.copyright__link:focus path,
-.copyright__link:active path {
+.copyright__logo-htmlacademy:active {
   fill: rgba(0, 0, 0, 0.3);
 }
 .intro__invite {
@@ -1408,10 +1407,6 @@ input[type="radio"].visually-hidden {
   .photos__number {
     bottom: 6px;
   }
-}
-.video {
-  /*padding-left: 40px;
-  padding-right: 40px;*/
 }
 @media (min-width: 768px) {
   .video {
