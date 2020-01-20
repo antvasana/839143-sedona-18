@@ -500,8 +500,7 @@ input[type="radio"].visually-hidden {
   }
 }
 .page-footer {
-  margin-top: 10px;
-  padding-top: 31px;
+  padding-top: 30px;
   padding-bottom: 35px;
   padding-left: 80px;
   padding-right: 80px;
@@ -1149,8 +1148,23 @@ input[type="radio"].visually-hidden {
     padding-right: 38px;
   }
 }
-.search-booking__map picture {
+.search-booking {
   position: relative;
+  min-height: 650px;
+}
+.search-booking .search-booking iframe {
+  position: relative;
+  z-index: 5;
+}
+.search-booking__map {
+  margin-top: 0;
+}
+.search-booking__map picture {
+  content: "";
+  position: absolute;
+  top: 265px;
+  left: 0;
+  z-index: -1;
 }
 .search-booking__map picture::before {
   content: "";

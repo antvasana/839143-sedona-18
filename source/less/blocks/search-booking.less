@@ -1,8 +1,23 @@
 .search-booking {
+  position: relative;
 
+  min-height: 650px;
+
+  .search-booking iframe {
+    position: relative;
+    z-index: 5;
+  }
+
+  &__map {
+    margin-top: 0;
+  }
 
   &__map picture {
-    position: relative;
+    content: "";
+    position: absolute;
+    top: 265px;
+    left: 0;
+    z-index: -1;
   }
 
   &__map picture::before {
