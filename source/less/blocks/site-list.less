@@ -8,6 +8,10 @@
     background-color: @main-color;
     border-bottom: 1px solid @main-color-dark;
     border-top: 1px solid @main-color-light;
+
+    @media (min-width: @tablet-width) {
+      width: 20%;
+    }
   }
 
   &__item:nth-child(1) {
@@ -20,8 +24,8 @@
 
   &__item a {
     display: block;
-    padding-top: 14px;
-    padding-bottom: 15px;
+    padding-top: 8px;
+    padding-bottom: 7px;
 
     font-weight: bold;
     .set-color(#ffffff);

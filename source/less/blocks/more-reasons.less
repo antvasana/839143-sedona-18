@@ -52,13 +52,15 @@
 
   &__gift {
     position: relative;
+
+    margin-bottom: 5px;
   }
 
   &__gift::before {
     content: "";
     position: absolute;
-    top: -8px;
-    left: -50px;
+    top: -10px;
+    left: -45px;
 
     width: 64px;
     height: 76px;
@@ -80,13 +82,15 @@
 
   &__food {
     position: relative;
+
+    margin-bottom: 5px;
   }
 
   &__food::before {
     content: "";
     position: absolute;
-    top: -8px;
-    left: -55px;
+    top: -6px;
+    left: -50px;
 
     width: 77px;
     height: 70px;
@@ -112,16 +116,25 @@
   }
 
   &__item:nth-child(1) {
-    margin: 40px 0;
+    margin: 35px 0 25px;
 
     @media (min-width: @tablet-width) {
       margin-left: 20px;
     }
   }
 
-  &__item:nth-child(2),
+
+  &__item:nth-child(2) {
+    margin-bottom: 30px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+      padding-top: 40px;
+    }
+  }
+
   &__item:nth-child(3) {
-    margin-bottom: 40px;
+    margin-bottom: 37px;
 
     @media (min-width: @tablet-width) {
       margin-bottom: 0;

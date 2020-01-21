@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
 
+  margin-bottom: 25px;
+
   .list-reset();
 
   @media (min-width: @tablet-width) {
@@ -40,6 +42,12 @@
     }
   }
 
+  .reasons__item--devil-bridge {
+    @media (min-width: @tablet-width) {
+      flex-direction: row-reverse;
+    }
+  }
+
   .reasons__city,
   .reasons__bridge {
     padding-left: 17px;
@@ -48,6 +56,8 @@
     @media (min-width: @tablet-width) {
         padding-left: 47px;
         padding-right: 47px;
+
+        width: 33%;
       }
   }
 
@@ -77,6 +87,7 @@
   .reasons__city h2 {
     margin-bottom: 0;
     padding-top: 50px;
+    padding-bottom: 3px;
 
     @media (min-width: @tablet-width) {
       padding-top: 30px;
@@ -110,11 +121,13 @@
   }
 
   .reasons__item--real-town p {
-    padding-bottom: 20px;
+    margin-bottom: 0;
+    padding-bottom: 25px;
   }
 
   .reasons__item--devil-bridge p {
-    padding-bottom: 27px;
+    margin-bottom: 0;
+    padding-bottom: 28px;
 
     @media (min-width: @tablet-width) {
       padding-bottom: 20px;
@@ -138,10 +151,12 @@
   }
 
   .reasons__item--real-town img {
-    top: 13px;
+    top: 2px;
 
     @media (min-width: @tablet-width) {
       top: 0;
+
+      width: 67%;
     }
   }
 
@@ -170,33 +185,35 @@
     order: -1;
   }
 
-  .reasons__item:nth-child(3),
-  .reasons__item:nth-child(4),
-  .reasons__item:nth-child(5) {
+  .reasons__item--sights,
+  .reasons__item--beautiful-road,
+  .reasons__item--few-tourists {
     background-color: @another-color;
 
     @media (min-width: @tablet-width) {
       padding-top: 30px;
       padding-bottom: 10px;
-      max-width: 255px;
+      width: 33.33%;
     }
 
     @media (min-width: @desktop-width) {
       padding-top: 40px;
       padding-bottom: 40px;
-      max-width: 399px;
     }
   }
 
-  .reasons__item:nth-child(3) h2,
-  .reasons__item:nth-child(4) h2,
-  .reasons__item:nth-child(5) h2 {
+  .reasons__item--sights h2,
+  .reasons__item--beautiful-road h2,
+  .reasons__item--few-tourists h2 {
     @media (min-width: @tablet-width) {
       margin-bottom: 5px;
     }
   }
 
-  .reasons__item:nth-child(3) h2 {
+  .reasons__item--sights h2 {
+    margin-top: 25px;
+    margin-bottom: 5px;
+
     @media (min-width: @tablet-width) {
       padding-right: 17px;
       padding-left: 17px;
@@ -208,7 +225,9 @@
     }
   }
 
-  .reasons__item:nth-child(4) h2 {
+  .reasons__item--beautiful-road h2 {
+    margin-bottom: 5px;
+
     @media (min-width: @tablet-width) {
       padding-right: 39px;
       padding-left: 39px;
@@ -220,7 +239,9 @@
     }
   }
 
-  .reasons__item:nth-child(5) h2 {
+  .reasons__item--few-tourists h2 {
+    margin-bottom: 5px;
+
     @media (min-width: @tablet-width) {
       padding-right: 50px;
       padding-left: 50px;
@@ -232,7 +253,7 @@
     }
   }
 
-  .reasons__item:nth-child(5) {
+  .reasons__item--few-tourists {
     @media (min-width: @tablet-width) {
       max-width: 256px;
     }
@@ -242,17 +263,17 @@
     }
   }
 
-  .reasons__item:nth-child(3) p,
-  .reasons__item:nth-child(4) p {
-    padding-bottom: 32px;
+  .reasons__item--sights p,
+  .reasons__item--beautiful-road p {
+    padding-bottom: 28px;
 
     @media (min-width: @tablet-width) {
       margin-top: 20px;
     }
   }
 
-  .reasons__item:nth-child(3) p,
-  .reasons__item:nth-child(4) p {
+  .reasons__item--sights p,
+  .reasons__item--beautiful-road p {
     margin-left: 20px;
     margin-right: 20px;
 
@@ -263,7 +284,7 @@
     }
   }
 
-  .reasons__item:nth-child(3) p {
+  .reasons__item--sights p {
     @media (min-width: @tablet-width) {
       padding-left: 20px;
     }
@@ -273,19 +294,7 @@
     }
   }
 
-  .reasons__item:nth-child(3) .reasons__second-line {
-    @media (min-width: @tablet-width) {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    @media (min-width: @desktop-width) {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-
-  .reasons__item:nth-child(4) p {
+  .reasons__item--beautiful-road p {
     padding-left: 16px;
     padding-right: 15px;
 
@@ -295,21 +304,10 @@
     }
   }
 
-  .reasons__item:nth-child(4) .reasons__second-line {
-    @media (min-width: @tablet-width) {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    @media (min-width: @desktop-width) {
-      padding-left: 0;
-      padding-right: 50px;
-    }
-  }
-
-  .reasons__item:nth-child(5) p {
-    margin-top: 17px;
+  .reasons__item--few-tourists p {
+    margin-top: 15px;
     margin-bottom: 0;
+    padding-bottom: 25px;
     padding-left: 30px;
     padding-right: 30px;
 
