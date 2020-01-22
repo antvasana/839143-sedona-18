@@ -10,7 +10,7 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    margin-bottom: 40px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: @desktop-width) {
@@ -50,25 +50,29 @@
 
   .reasons__city,
   .reasons__bridge {
-    padding-left: 17px;
-    padding-right: 17px;
-
     @media (min-width: @tablet-width) {
-        padding-left: 47px;
-        padding-right: 47px;
-
         width: 33%;
       }
   }
 
   .reasons__city {
-      @media (min-width: @desktop-width) {
-        padding-left: 65px;
-        padding-right: 65px;
-      }
+    @media (min-width: @tablet-width) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 65px;
+      padding-right: 65px;
+    }
   }
 
   .reasons__bridge {
+    @media (min-width: @tablet-width) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
       @media (min-width: @desktop-width) {
         padding-left: 90px;
         padding-right: 90px;
@@ -91,6 +95,8 @@
 
     @media (min-width: @tablet-width) {
       padding-top: 30px;
+      padding-left: 5px;
+      padding-right: 5px;
     }
 
     @media (min-width: @desktop-width) {
@@ -104,8 +110,9 @@
     padding-top: 25px;
 
     @media (min-width: @tablet-width) {
-      padding-left: 4px;
-      padding-right: 5px;
+      margin-bottom: 7px;
+      padding-left: 31px;
+      padding-right: 31.2px;
     }
 
     @media (min-width: @desktop-width) {
@@ -120,17 +127,27 @@
     line-height: @small-line-height;
   }
 
-  .reasons__item--real-town p {
+  .reasons__city p {
     margin-bottom: 0;
     padding-bottom: 25px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 20px;
+      padding-bottom: 5px;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
   }
 
-  .reasons__item--devil-bridge p {
+  .reasons__bridge p {
     margin-bottom: 0;
     padding-bottom: 28px;
 
     @media (min-width: @tablet-width) {
+      margin-top: 20px;
       padding-bottom: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
 
@@ -192,7 +209,7 @@
 
     @media (min-width: @tablet-width) {
       padding-top: 30px;
-      padding-bottom: 10px;
+      padding-bottom: 5px;
       width: 33.33%;
     }
 
@@ -211,7 +228,6 @@
   }
 
   .reasons__item--sights h2 {
-    margin-top: 25px;
     margin-bottom: 5px;
 
     @media (min-width: @tablet-width) {
@@ -263,30 +279,19 @@
     }
   }
 
-  .reasons__item--sights p,
-  .reasons__item--beautiful-road p {
-    padding-bottom: 28px;
-
-    @media (min-width: @tablet-width) {
-      margin-top: 20px;
-    }
-  }
-
-  .reasons__item--sights p,
-  .reasons__item--beautiful-road p {
+  .reasons__item--sights p {
     margin-left: 20px;
     margin-right: 20px;
+    padding-bottom: 28px;
 
     border-bottom: 1px solid @border-color-two;
 
     @media (min-width: @tablet-width) {
-      border-bottom: none;
-    }
-  }
-
-  .reasons__item--sights p {
-    @media (min-width: @tablet-width) {
+      margin-top: 20px;
       padding-left: 20px;
+      padding-right: 20px;
+
+      border-bottom: none;
     }
 
     @media (min-width: @desktop-width) {
@@ -295,12 +300,20 @@
   }
 
   .reasons__item--beautiful-road p {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 28px;
     padding-left: 16px;
     padding-right: 15px;
 
+    border-bottom: 1px solid @border-color-two;
+
     @media (min-width: @tablet-width) {
-      padding-left: 30px;
-      padding-right: 20px;
+      margin-top: 20px;
+      padding-left: 35px;
+      padding-right: 35px;
+
+      border-bottom: none;
     }
   }
 
@@ -312,6 +325,7 @@
     padding-right: 30px;
 
     @media (min-width: @tablet-width) {
+      margin-top: 20px;
       padding-left: 38px;
       padding-right: 38px;
     }

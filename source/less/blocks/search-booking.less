@@ -6,6 +6,10 @@
   .search-booking iframe {
     position: relative;
     z-index: 5;
+
+    @media (min-width: @tablet-width) {
+      top: 10px;
+    }
   }
 
   &__map {
@@ -15,9 +19,13 @@
   &__map picture {
     content: "";
     position: absolute;
-    top: 265px;
+    top: 275px;
     left: 0;
     z-index: -1;
+
+    @media (min-width: @tablet-width) {
+      top: 263px;
+    }
   }
 
   &__map picture::before {
@@ -70,6 +78,7 @@
     line-height: @main-line-height;
 
     @media (min-width: @tablet-width) {
+      margin-bottom: 42px;
       margin-left: 150px;
       margin-right: 150px;
 
@@ -84,8 +93,8 @@
 
   &__trip-date span {
     @media (min-width: @tablet-width) {
-      margin-left: 70px;
-      margin-right: 80px;
+      margin-left: 80px;
+      margin-right: 75px;
     }
   }
 
@@ -93,7 +102,7 @@
     display: block;
 
     margin: 0 auto;
-    margin-bottom: 49px;
+    margin-bottom: 55px;
     padding: 18px 47px 17px;
     width: 280px;
 
@@ -104,7 +113,7 @@
     background-color: @main-color;
 
     @media (min-width: @tablet-width) {
-      margin-bottom: 58px;
+      margin-bottom: 55px;
       width: 458px;
     }
   }

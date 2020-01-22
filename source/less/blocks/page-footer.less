@@ -17,7 +17,7 @@
     padding-right: 120px;
   }
 
-  .page-footer__hashtag {
+  &__hashtag {
     display: block;
     margin-bottom: 37px;
 
@@ -27,7 +27,7 @@
     color: #000000;
 
     @media (min-width: @tablet-width) {
-      margin-top: 15px;
+      margin-top: 10px;
     }
   }
 }
@@ -38,10 +38,6 @@
 
   .list-reset();
   margin-bottom: 27px;
-
-  @media (min-width: @tablet-width) {
-    margin-right: 65px;
-  }
 
   &__button:nth-child(3) {
     margin-right: 0;
@@ -93,12 +89,17 @@
     line-height: @main-line-height;
 
     @media (min-width: @tablet-width) {
-      margin-right: 11px;
+      margin-top: 10px;
+      margin-right: 12px;
     }
   }
 
   &__link {
     margin-top: 10px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 9px;
+    }
   }
 
   &__logo-htmlacademy:hover {
