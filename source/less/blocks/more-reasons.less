@@ -13,6 +13,10 @@
     text-align: center;
   }
 
+  @media (min-width: @desktop-width) {
+    padding-bottom: 24px;
+  }
+
   &__item h3 {
     .main-font();
 
@@ -27,6 +31,10 @@
 
     @media (min-width: @tablet-width) {
       margin-right: 20px;
+     }
+
+     @media (min-width: @desktop-width) {
+      margin-right: 30px;
      }
   }
 
@@ -50,7 +58,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      left: 133px;
+      left: 120px;
     }
   }
 
@@ -63,6 +71,11 @@
       margin-top: 15px;
       margin-bottom: 20px;
       margin-right: 15px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 50px;
+      margin-right: 0;
     }
   }
 
@@ -86,7 +99,8 @@
     }
 
     @media (min-width: @desktop-width) {
-      left: 170px;
+      top: -103px;
+      left: 173px;
     }
   }
 
@@ -99,6 +113,10 @@
       margin-top: 15px;
       margin-bottom: 20px;
       margin-right: 15px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 80px;
     }
   }
 
@@ -122,7 +140,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      left: 125px;
+      left: 90px;
     }
   }
 
@@ -139,6 +157,10 @@
     @media (min-width: @tablet-width) {
       margin-left: 10px;
     }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 40px;
+    }
   }
 
   &__item:nth-child(2) {
@@ -146,7 +168,12 @@
 
     @media (min-width: @tablet-width) {
       margin-bottom: 0;
+      margin-right: 30px;
       padding-top: 40px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-right: 0;
     }
   }
 
@@ -159,15 +186,10 @@
       margin-right: 40px;
       padding-top: 40px;
     }
-  }
-
-  &__item:nth-child(2) {
-    @media (min-width: @tablet-width) {
-      margin-right: 30px;
-    }
 
     @media (min-width: @desktop-width) {
-      margin-right: 55px;
+      margin-right: 0;
+      margin-left: 0;
     }
   }
 
@@ -178,8 +200,8 @@
     }
 
     @media (min-width: @desktop-width) {
-      padding-left: 40px;
-      padding-right: 50px;
+      padding-left: 30px;
+      padding-right: 60px;
     }
   }
 
@@ -189,8 +211,17 @@
     }
 
     @media (min-width: @desktop-width) {
-      padding-left: 60px;
-      padding-right: 60px;
+      padding-left: 88px;
+      padding-right: 32px;
+    }
+  }
+
+  &__item:nth-child(2) &__first-line {
+    @media (min-width: @desktop-width) {
+      padding-left: 80px;
+      padding-right: 90px;
+
+      min-width: 214px;
     }
   }
 
@@ -201,8 +232,10 @@
     }
 
     @media (min-width: @desktop-width) {
-      padding-left: 20px;
-      padding-right: 40px;
+      padding-left: 60px;
+      padding-right: 0;
+
+      min-width: 350px;
     }
   }
 }
