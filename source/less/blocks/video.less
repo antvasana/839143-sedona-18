@@ -21,6 +21,8 @@
   }
 
   &__proposal {
+    margin-top: 25px;
+    margin-bottom: 35px;
     padding-left: 40px;
     padding-right: 40px;
 
@@ -43,6 +45,7 @@
     display: flex;
     flex-direction: column-reverse;
 
+    margin-left: 5px;
     width: 87%;
 
     @media (min-width: @tablet-width) {
@@ -76,49 +79,49 @@
     }
   }
 
-  &__panel-play::before{
+  &__panel-play::before {
     content: "";
     position: absolute;
     top: 18px;
-    left: 50px;
+    left: 55px;
 
     width: 10px;
     height: 10px;
 
-   background-color: #ffffff;
-   border-radius: 50%;
+    background-color: #ffffff;
+    border-radius: 50%;
 
-   @media (min-width: @tablet-width) {
-    top: 44%;
-    left: 31.5%;
-   }
+    @media (min-width: @tablet-width) {
+      top: 44%;
+      left: 31.5%;
+    }
 
-   @media (min-width: @desktop-width) {
-    left: 25%;
-   }
+    @media (min-width: @desktop-width) {
+      left: 25%;
+    }
   }
 
   &__bar-play {
     content: "";
     position: absolute;
     top: 22px;
-    left: 15px;
+    left: 20px;
 
-    width: 90%;
+    width: 84%;
     height: 3px;
 
-   background-color: #ffffff;
-   opacity: 0.6;
+    background-color: #ffffff;
+    opacity: 0.6;
 
-   @media (min-width: @tablet-width) {
-    top: 45px;
-    left: 93px;
-    width: 60%;
-   }
+    @media (min-width: @tablet-width) {
+      top: 45px;
+      left: 93px;
+      width: 60%;
+    }
 
-   @media (min-width: @desktop-width) {
-    width: 63%;
-   }
+    @media (min-width: @desktop-width) {
+      width: 63%;
+    }
   }
 
   &__replay {

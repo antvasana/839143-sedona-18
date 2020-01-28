@@ -18,155 +18,155 @@
   }
 }
 
-  .reasons__item--real-town,
-  .reasons__item--devil-bridge {
-    min-height: 450px;
+.reasons__item--real-town,
+.reasons__item--devil-bridge {
+  min-height: 450px;
 
-    .set-color(white);
-    background-color: @main-color;
+  .set-color(white);
+  background-color: @main-color;
 
-    @media (min-width: @tablet-width) {
-      display: flex;
+  @media (min-width: @tablet-width) {
+    display: flex;
 
-      min-height: 256px;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 1200px;
-    }
+    min-height: 256px;
   }
 
-  .reasons__item--real-town {
-    @media (min-width: @tablet-width) {
-      margin-bottom: 43px;
-    }
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
+.reasons__item--real-town {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 43px;
+  }
+}
+
+.reasons__item--devil-bridge {
+  @media (min-width: @tablet-width) {
+    flex-direction: row-reverse;
+  }
+}
+
+.reasons__city,
+.reasons__bridge {
+  @media (min-width: @tablet-width) {
+    width: 33%;
+  }
+}
+
+.reasons__city {
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  .reasons__item--devil-bridge {
-    @media (min-width: @tablet-width) {
-      flex-direction: row-reverse;
-    }
+  @media (min-width: @desktop-width) {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+}
+
+.reasons__bridge {
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  .reasons__city,
-  .reasons__bridge {
-    @media (min-width: @tablet-width) {
-        width: 33%;
-      }
+  @media (min-width: @desktop-width) {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
+
+.reasons__item h2 {
+  .main-font();
+
+  @media (min-width: @tablet-width) {
+    font-size: @big-font-size;
+    line-height: @main-line-height;
+  }
+}
+
+.reasons__city h2 {
+  margin-bottom: 0;
+  padding-top: 50px;
+  padding-bottom: 3px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
-  .reasons__city {
-    @media (min-width: @tablet-width) {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
+  @media (min-width: @desktop-width) {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+}
 
-    @media (min-width: @desktop-width) {
-      padding-left: 65px;
-      padding-right: 65px;
-    }
+.reasons__bridge h2 {
+  margin-bottom: 0;
+  padding-top: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 7px;
+    padding-left: 31px;
+    padding-right: 31.2px;
   }
 
-  .reasons__bridge {
-    @media (min-width: @tablet-width) {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
+  @media (min-width: @desktop-width) {
+    margin-top: 30px;
+    padding-left: 32px;
+    padding-right: 33px;
+  }
+}
 
-      @media (min-width: @desktop-width) {
-        padding-left: 90px;
-        padding-right: 90px;
-      }
+.reasons__item span,
+.reasons__item p {
+  font-size: @small-font-size;
+  line-height: @small-line-height;
+}
+
+.reasons__city p {
+  margin-bottom: 0;
+  padding-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
-  .reasons__item h2 {
-    .main-font();
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
 
-    @media (min-width: @tablet-width) {
-      font-size: @big-font-size;
-      line-height: @main-line-height;
-    }
+    min-width: 270px;
+  }
+}
+
+.reasons__bridge p {
+  margin-bottom: 0;
+  padding-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
-  .reasons__city h2 {
-    margin-bottom: 0;
-    padding-top: 50px;
-    padding-bottom: 3px;
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
 
-    @media (min-width: @tablet-width) {
-      padding-top: 30px;
-      padding-left: 5px;
-      padding-right: 5px;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin-top: 20px;
-      margin-bottom: 5px;
-      padding-left: 26px;
-      padding-right: 26px;
-    }
+    min-width: 215px;
   }
-
-  .reasons__bridge h2 {
-    margin-bottom: 0;
-    padding-top: 25px;
-
-    @media (min-width: @tablet-width) {
-      margin-bottom: 7px;
-      padding-left: 31px;
-      padding-right: 31.2px;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin-top: 30px;
-      padding-left: 32px;
-      padding-right: 33px;
-    }
-  }
-
-  .reasons__item span,
-  .reasons__item p {
-    font-size: @small-font-size;
-    line-height: @small-line-height;
-  }
-
-  .reasons__city p {
-    margin-bottom: 0;
-    padding-bottom: 25px;
-
-    @media (min-width: @tablet-width) {
-      margin-top: 20px;
-      padding-bottom: 5px;
-      padding-left: 25px;
-      padding-right: 25px;
-    }
-
-    @media (min-width: @desktop-width) {
-      padding-left: 0;
-      padding-right: 0;
-
-      min-width: 270px;
-    }
-  }
-
-  .reasons__bridge p {
-    margin-bottom: 0;
-    padding-bottom: 28px;
-
-    @media (min-width: @tablet-width) {
-      margin-top: 20px;
-      padding-bottom: 20px;
-      padding-left: 15px;
-      padding-right: 15px;
-
-      @media (min-width: @desktop-width) {
-        padding-left: 0;
-        padding-right: 0;
-
-        min-width: 215px;
-      }
-    }
-  }
+}
 
   .reasons__item--real-town img,
   .reasons__item--devil-bridge img {
@@ -202,7 +202,7 @@
     }
   }
 
-   .reasons__wrapper {
+  .reasons__wrapper {
     overflow: hidden;
     height: 260px;
 

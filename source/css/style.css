@@ -701,7 +701,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 60% 90%;
-  height: 180px;
+  height: 160px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .intro__invite-inner {
@@ -762,7 +762,7 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 768px) {
   .intro__image-inner {
-    margin-top: 60px;
+    margin-top: 95px;
     padding-top: 0;
     padding-bottom: 0;
     width: 460px;
@@ -1336,11 +1336,8 @@ input[type="radio"].visually-hidden {
   margin-top: 0;
   padding-left: 0;
   list-style: none;
+  margin-bottom: 32px;
   text-align: left;
-  /*&__icon-like path {
-    @media (min-width: @desktop-width) {
-      fill: #ffffff;
-    }*/
 }
 @media (min-width: 768px) {
   .photos {
@@ -1352,17 +1349,19 @@ input[type="radio"].visually-hidden {
             justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-bottom: 68px;
+    margin-bottom: 60px;
     padding-left: 60px;
     padding-right: 60px;
   }
 }
 .photos__item {
-  padding-left: 20px;
+  padding-top: 21px;
+  padding-left: 19px;
   border-bottom: 1px solid #e5e5e5;
 }
 @media (min-width: 768px) {
   .photos__item {
+    padding-top: 0;
     padding-left: 0;
     border-bottom: none;
   }
@@ -1408,7 +1407,7 @@ input[type="radio"].visually-hidden {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-bottom: 21px;
+    padding-bottom: 15px;
     padding-left: 20px;
   }
 }
@@ -1451,6 +1450,7 @@ input[type="radio"].visually-hidden {
   }
 }
 .photos__title {
+  margin-top: 9px;
   margin-bottom: 0;
 }
 .photos__title,
@@ -1464,8 +1464,8 @@ input[type="radio"].visually-hidden {
   text-transform: none;
 }
 .photos__likes {
-  margin-top: 5px;
-  margin-bottom: 23px;
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: bold;
 }
 @media (min-width: 768px) {
@@ -1475,7 +1475,8 @@ input[type="radio"].visually-hidden {
   }
 }
 .photos__icon-like {
-  padding-right: 13px;
+  padding-top: 3px;
+  padding-right: 12px;
   opacity: 0.3;
   cursor: pointer;
 }
@@ -1522,6 +1523,8 @@ input[type="radio"].visually-hidden {
   }
 }
 .video__proposal {
+  margin-top: 25px;
+  margin-bottom: 35px;
   padding-left: 40px;
   padding-right: 40px;
   font-size: 14px;
@@ -1548,6 +1551,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  margin-left: 5px;
   width: 87%;
 }
 @media (min-width: 768px) {
@@ -1583,7 +1587,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 18px;
-  left: 50px;
+  left: 55px;
   width: 10px;
   height: 10px;
   background-color: #ffffff;
@@ -1604,8 +1608,8 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 22px;
-  left: 15px;
-  width: 90%;
+  left: 20px;
+  width: 84%;
   height: 3px;
   background-color: #ffffff;
   opacity: 0.6;
@@ -1975,12 +1979,6 @@ input[type="radio"].visually-hidden {
 }
 .feedback input::-webkit-input-placeholder,
 .feedback textarea::-webkit-input-placeholder {
-  color: black;
-  opacity: 1;
-  font-weight: bold;
-}
-.feedback input::-moz-placeholder,
-.feedback textarea::-moz-placeholder {
   color: black;
   opacity: 1;
   font-weight: bold;
@@ -2878,14 +2876,14 @@ input[type="radio"].visually-hidden {
   }
 }
 .presentation {
-  padding-bottom: 33px;
+  padding-bottom: 13px;
   padding-left: 24px;
   padding-right: 24px;
   border-bottom: 1px solid #e5e5e5;
 }
 @media (min-width: 768px) {
   .presentation {
-    padding-bottom: 75px;
+    padding-bottom: 53px;
     padding-left: 160px;
     padding-right: 160px;
     border-bottom: none;
@@ -2899,11 +2897,13 @@ input[type="radio"].visually-hidden {
   }
 }
 .presentation__title {
+  margin-bottom: 25px;
   font-size: 18px;
   line-height: 26px;
 }
 @media (min-width: 768px) {
   .presentation__title {
+    margin-bottom: 30px;
     font-size: 30px;
     line-height: 26px;
   }

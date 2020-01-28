@@ -13,7 +13,7 @@
 
 .impression-list,
 .visited-sights-list {
-.list-reset();
+  .list-reset();
 }
 
 .feedback fieldset:last-of-type {
@@ -381,6 +381,8 @@
   }
 
   &__label--phone::after {
+    background: @element-background-color url("../img/icon-phone.svg") no-repeat 50%;
+
     @media (min-width: @desktop-width) {
       top: 0;
       right: -141%;
@@ -388,19 +390,12 @@
   }
 
   &__label--email::after {
+    background: @element-background-color url("../img/icon-mail.svg") no-repeat 50%;
+
     @media (min-width: @desktop-width) {
       top: 0;
       right: -187%;
     }
-  }
-
-
-  &__label--phone::after {
-    background: @element-background-color url("../img/icon-phone.svg") no-repeat 50%;
-  }
-
-  &__label--email::after{
-    background: @element-background-color url("../img/icon-mail.svg") no-repeat 50%;
   }
 
   &__user--phone {
@@ -768,6 +763,7 @@
 
 .visited-sights-list__input:checked + .visited-sights-list__label--mountain-bell::after {
   content: "";
+
   @media (min-width: @tablet-width) {
     left: 28px;
   }
@@ -780,6 +776,7 @@
 .visited-sights-list__option:last-child {
   margin-bottom: 25px;
 }
+
 .story__textfield {
   margin-left: 19px;
   padding-top: 20px;
@@ -804,6 +801,6 @@
 
 .story__textfield:active,
 .story__textfield:focus {
-    background-color: transparent;
-    border: 4px solid #e5e5e5;
+  background-color: transparent;
+  border: 4px solid #e5e5e5;
 }
