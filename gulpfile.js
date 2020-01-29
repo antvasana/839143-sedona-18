@@ -1,9 +1,12 @@
 "use strict";
 
 var gulp = require("gulp");
+var webp = require("gulp-webp");
+var imagemin = require("gulp-imagemin");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var rename = require("gulp-rename");
+var svgstore = require("gulp-svgstore");
 
 var less = require("gulp-less");
 var postcss = require("gulp-postcss");
@@ -22,6 +25,30 @@ gulp.task("css", function () {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
+});
+
+gulp.task("images", function () {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("webp", function () {
+  return gulp.src("source/img/**/*.{png,jpg}")
+  .pipe(webp({quality: 90}))
+  .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("sprite", function () {
+  return gulp.src("source/img/icon-*.svg")
+   .pipe(svgstore({
+     inlineSvg: true
+   }))
+   .pipe(rename("sprite.svg"))
+   .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("server", function () {
